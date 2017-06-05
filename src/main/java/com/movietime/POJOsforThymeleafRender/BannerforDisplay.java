@@ -1,4 +1,4 @@
-package com.movietime.entity;
+package com.movietime.POJOsforThymeleafRender;
 
 public class BannerforDisplay {
     public String name;

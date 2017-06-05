@@ -1,4 +1,4 @@
-package com.movietime.entity;
+package com.movietime.POJOsforThymeleafRender;
 
 import java.util.Random;
 

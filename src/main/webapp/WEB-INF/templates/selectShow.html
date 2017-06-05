@@ -69,7 +69,9 @@
 								<span th:text="${theater.name} + ' : ' + ${theater.location}"></span>
 							</li>
 							<li class="time" th:each="show : ${theater.showList}">
-								<a th:name="${theater.name}" onclick="clickShow(this)" th:text="${show}"></a>
+								<a th:name="${theater.name}"
+								   th:href="'/selectSeat/cinema/' + ${theater.id} + '?movie_id=' + ${movie.id} + '&show_id=' + ${show}"
+								th:text="${show}"></a>
 							</li>
 						</ul>
 					</div>

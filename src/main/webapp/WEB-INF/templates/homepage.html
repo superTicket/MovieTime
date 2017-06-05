@@ -57,7 +57,7 @@
 				<div class="item" th:each="banner, iterStat : ${bannerList}" th:classappend="${iterStat.first} ? active">
 					<img th:src="@{${banner.path}}" th:alt="${iterStat.index} + ' ' + slide"/>
 					<div class="button">
-						<a th:name="${banner.name}" onclick="clickMovie(this)" class="hvr-shutter-out-horizontal">Buy Ticket</a>
+						<a th:name="${banner.name}" th:href="'/selectShow?movieName=' + ${banner.name}" class="hvr-shutter-out-horizontal">Buy Ticket</a>
 					</div>
 				</div>
 			</div>
@@ -85,13 +85,13 @@
 								<div th:each="panel:${panelList}" role="tabpanel" class="tab-pane fade in" th:classappend="(${panel.active} ? active)" th:id="${panel.id}" aria-labelledby="home-tab">
 									<div class="w3_agile_featured_movies">
 										<div class="col-md-2 w3l-movie-gride-agile" th:each="movieItem : ${panel.movieList}">
-											<a th:name="${movieItem.name}" onclick="clickMovie(this)" class="hvr-shutter-out-horizontal">
+											<a th:name="${movieItem.name}" th:href="'/selectShow?movieName=' + ${movieItem.name}" class="hvr-shutter-out-horizontal">
 												<img th:src="@{${movieItem.poster_path}}" title="album-name" class="img-responsive" alt=" " />
 												<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 											</a>
 											<div class="mid-1 agileits_w3layouts_mid_1_home">
 												<div class="w3l-movie-text">
-													<h6><a th:name="${movieItem.name}" onclick="clickMovie(this)" th:text="${movieItem.name}"></a></h6>
+													<h6><a th:name="${movieItem.name}" th:href="'/selectShow?movieName=' + ${movieItem.name}" th:text="${movieItem.name}"></a></h6>
 												</div>
 												<div class="mid-2 agile_mid_2_home">
 

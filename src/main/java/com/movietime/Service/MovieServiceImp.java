@@ -20,7 +20,16 @@ public class MovieServiceImp implements MovieService {
     }
 
     public Movie findOne(int id) {
-        return null;
+        Movie movie = new Movie();
+        movie.poster_path = "/images/selectShow/movie-show.jpg";
+        movie.release_date = "Jul 10, 2015";
+        movie.duration = "2 hrs 30 mins";
+        movie.director = "S.S. Rajamouli.";
+        movie.language = "Telugu";
+        movie.genre = "Action, Romance";
+        movie.cast_and_crew = "Prabhas as Amarendra Baahubali and Shivudu, Rana Daggubati as Bhallala Deva in Telugu and Palvaalthevan in Tamil, Anushka Shetty as Devasena, Tamannaah as Avantika, Sathyaraj as Kattappa, Nassar as Bijjala Deva in Telugu and Pingala Devan in Tamil, Ramya Krishnan as Sivagami";
+        return movie;
+
     }
 
     public List<String> getAllMovieTags() {

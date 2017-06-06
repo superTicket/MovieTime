@@ -1,6 +1,5 @@
-package com.movietime.RepositoryImp;
+package com.movietime.Service;
 
-import com.movietime.Repository.InTheaterMovieRepository;
 import com.movietime.entity.Movie;
 import org.springframework.stereotype.Component;
 
@@ -11,7 +10,7 @@ import java.util.List;
  * Created by yangzy on 2017/6/6.
  */
 @Component
-public class InTheaterMovieRepositoryImp implements InTheaterMovieRepository {
+public class InTheaterMovieServiceImp implements InTheaterMovieService {
     public List<Movie> getAllMovies() {
         List<Movie> movieList = new LinkedList<Movie>();
         movieList.add(new Movie("Guardians of the Galaxy", null, "/images/homepage/banner.jpg"));

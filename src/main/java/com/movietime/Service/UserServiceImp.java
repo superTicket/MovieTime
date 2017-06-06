@@ -1,6 +1,5 @@
-package com.movietime.RepositoryImp;
+package com.movietime.Service;
 
-import com.movietime.Repository.UserRepository;
 import com.movietime.entity.User;
 import org.springframework.stereotype.Component;
 
@@ -9,7 +8,7 @@ import org.springframework.stereotype.Component;
  */
 
 @Component("UserRepositoryImp")
-public class UserRepositoryImp implements UserRepository {
+public class UserServiceImp implements UserService {
     public User getUserByUsername(String username) {
         return new User();
     }

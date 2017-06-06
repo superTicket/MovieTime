@@ -6,7 +6,7 @@ package com.movietime.controller;
 
 import com.movietime.POJOsforThymeleafRender.BannerforDisplay;
 import com.movietime.POJOsforThymeleafRender.PanelforDisplay;
-import com.movietime.Repository.InTheaterMovieRepository;
+import com.movietime.Service.InTheaterMovieService;
 import com.movietime.entity.Movie;
 import com.movietime.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +23,7 @@ import java.util.List;
 @RequestMapping(value = {"/", "/homepage", "/index", "/index.html"})
 public class HomePageController {
     @Autowired
-    InTheaterMovieRepository mr;
+    InTheaterMovieService ms;
 
     @RequestMapping(method = RequestMethod.GET)
     public String get_homepage(Model model, HttpSession session) {
@@ -34,7 +34,7 @@ public class HomePageController {
             model.addAttribute("usericon_path", user.iconPath);
         }
 
-        List<Movie> movieList = mr.getAllMovies();
+        List<Movie> movieList = ms.getAllMovies();
 
         // 从数据库获取banner，注入模型
         List<BannerforDisplay> bannerList = new LinkedList<BannerforDisplay>();
@@ -55,7 +55,7 @@ public class HomePageController {
         }
 
         // 从数据库获取panel，注入模型. 每个panel与数据库中的tag对应
-        List<String> tagList = mr.getAllMovieTags();
+        List<String> tagList = ms.getAllMovieTags();
         PanelforDisplay[] panelList = new PanelforDisplay[tagList.size()];
         for (int i = 0; i < tagList.size(); i++) {
             // 将panel元数据注入模型
@@ -64,7 +64,7 @@ public class HomePageController {
             panelList[i].name = tag;
             if (i == 0) panelList[i].active = true;
             // 将与该panel相关的电影注入模型
-            List<Movie> relevantMovieList = mr.getMovieByTag(tag);
+            List<Movie> relevantMovieList = ms.getMovieByTag(tag);
             List<Movie> noPosterList = new LinkedList<Movie>(); // 排除没有poster的电影
             for (Movie movie : relevantMovieList) {
                 if (movie.poster_path == null)

@@ -21,7 +21,6 @@ public class Converter {
         movieforDisplay.name = movie.name;
         movieforDisplay.poster_path = movie.poster_path;
         movieforDisplay.release_date = movie.release_date;
-
         return movieforDisplay;
     }
 

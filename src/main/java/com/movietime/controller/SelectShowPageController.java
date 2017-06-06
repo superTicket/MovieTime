@@ -31,6 +31,7 @@ public class SelectShowPageController {
         }
 
         // 获取电影
+
         MovieforDisplay movie = new MovieforDisplay();
         movie.poster_path = "/images/selectShow/movie-show.jpg";
         movie.release_date = "Jul 10, 2015";

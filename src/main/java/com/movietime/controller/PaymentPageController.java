@@ -1,11 +1,13 @@
 package com.movietime.controller;
 
+import com.movietime.entity.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpSession;
 import java.util.Random;
 
 /**
@@ -15,9 +17,13 @@ import java.util.Random;
 @RequestMapping(value = "/payment")
 public class PaymentPageController {
     @RequestMapping(method = RequestMethod.GET)
-    public String get_payment(Model model) {
-        model.addAttribute("username", "Alice");
-        model.addAttribute("usericon_path", "/images/user_icon/p1.png");
+    public String get_payment(Model model, HttpSession session) {
+        // 登录状态
+        User user = (User) session.getAttribute("user");
+        if (user != null) {
+            model.addAttribute("username", user.name);
+            model.addAttribute("usericon_path", user.iconPath);
+        }
 
         model.addAttribute("movie_name", "Baahubali");
         model.addAttribute("theater_name", "Lorem Ipsum");

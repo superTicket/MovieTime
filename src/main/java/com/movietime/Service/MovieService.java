@@ -1,6 +1,6 @@
 package com.movietime.Service;
 
-import com.movietime.VO.MovieforDisplay;
+import com.movietime.entity.Movie;
 
 import java.util.List;
 
@@ -8,11 +8,11 @@ import java.util.List;
  * Created by yangzy on 2017/6/6.
  */
 public interface MovieService {
-    MovieforDisplay findOne(int id);
+    Movie findOne(int id);
 
-    List<MovieforDisplay> findAll();
+    List<Movie> findAll();
 
-    List<MovieforDisplay> getMovieByTag(String tag);
+    List<Movie> getMovieByTag(String tag);
 
     List<String> getAllMovieTags();
 }

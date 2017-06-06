@@ -1,12 +1,10 @@
-package com.movietime.POJOsforThymeleafRender;
-
-import com.movietime.entity.Movie;
+package com.movietime.VO;
 
 import java.util.Random;
 
 public class PanelforDisplay {
     public String name;
-    public Movie[] movieList;
+    public MovieforDisplay[] movieList;
     public boolean active;
     public int id;
 

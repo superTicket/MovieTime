@@ -1,4 +1,4 @@
-package com.movietime.POJOsforThymeleafRender;
+package com.movietime.VO;
 
 public class BannerforDisplay {
     public int id;

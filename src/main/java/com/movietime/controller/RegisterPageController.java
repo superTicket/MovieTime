@@ -6,9 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-/**
- * Created by yangzy on 2017/6/5.
- */
+
 @Controller
 @RequestMapping(value = "/register")
 public class RegisterPageController {

@@ -1,7 +1,7 @@
 package com.movietime.controller;
 
-import com.movietime.POJOsforThymeleafRender.MovieforDisplay;
-import com.movietime.POJOsforThymeleafRender.TheaterforDisplay;
+import com.movietime.entity.Movie;
+import com.movietime.entity.Theater;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,7 +22,7 @@ public class SelectShowPageController {
         model.addAttribute("username", "Alice");
         model.addAttribute("usericon_path", "/images/user_icon/p1.png");
 
-        MovieforDisplay movie = new MovieforDisplay();
+        Movie movie = new Movie();
         movie.poster_path = "/images/selectShow/movie-show.jpg";
         movie.release_date = "Jul 10, 2015";
         movie.duration = "2 hrs 30 mins";
@@ -32,15 +32,15 @@ public class SelectShowPageController {
         movie.cast_and_crew = "Prabhas as Amarendra Baahubali and Shivudu, Rana Daggubati as Bhallala Deva in Telugu and Palvaalthevan in Tamil, Anushka Shetty as Devasena, Tamannaah as Avantika, Sathyaraj as Kattappa, Nassar as Bijjala Deva in Telugu and Pingala Devan in Tamil, Ramya Krishnan as Sivagami";
         model.addAttribute("movie", movie);
 
-        TheaterforDisplay[] theaterList = new TheaterforDisplay[2];
-        theaterList[0] = new TheaterforDisplay();
+        Theater[] theaterList = new Theater[2];
+        theaterList[0] = new Theater();
         theaterList[0].name = "King Street Theater";
         theaterList[0].location = "123 Street";
         theaterList[0].showList = new String[2];
         theaterList[0].showList[0] = "08:32";
         theaterList[0].showList[1] = "11:33";
 
-        theaterList[1] = new TheaterforDisplay();
+        theaterList[1] = new Theater();
         theaterList[1].name = "StoneBraker Theater";
         theaterList[1].location = "666 Street";
         theaterList[1].showList = new String[2];

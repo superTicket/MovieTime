@@ -6,6 +6,8 @@ public class User {
     public int id;
     public String name;
     public String iconPath;
+    public String first_name;
+    public String last_name;
 
     public User() {
         this.id = new Random().nextInt();

@@ -7,6 +7,7 @@ import com.movietime.entity.User;
  */
 public interface UserService {
     User getUserByUsername(String username);
-
     boolean checkPassword(String username);
+
+    boolean registerUser(String username, String password, String first_name, String last_name);
 }

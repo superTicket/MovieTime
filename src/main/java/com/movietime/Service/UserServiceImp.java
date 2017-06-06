@@ -16,4 +16,12 @@ public class UserServiceImp implements UserService {
     public boolean checkPassword(String username) {
         return true;
     }
+
+    public boolean registerUser(String username, String password, String first_name, String last_name) {
+        return true;
+    }
+
+    public boolean registerUser(String username, String password) {
+        return true;
+    }
 }

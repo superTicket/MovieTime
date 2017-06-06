@@ -13,4 +13,6 @@ public interface ShowService {
     public List<Show> findAll();
 
     public List<Show> findShowByMovie(int movie_id);
+
+    public Show findShowByTheaterIDAndName(int theater_id, String name);
 }

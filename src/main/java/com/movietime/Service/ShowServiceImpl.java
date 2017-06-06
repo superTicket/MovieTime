@@ -12,7 +12,27 @@ import java.util.List;
 @Component
 public class ShowServiceImpl implements ShowService {
     public Show findOne(int show_id) {
-        return null;
+        Show show = new Show();
+        String[] seat_map = {  //Seating chart
+                "aaaaaaaaaa",
+                "aaaaaaaaaa",
+                "__________",
+                "aaaaaaaa__",
+                "aaaaaaaaaa",
+                "aaaaaaaaaa",
+                "aaaaaaaaaa",
+                "aaaaaaaaaa",
+                "aaaaaaaaaa",
+                "__aaaaaa__",
+                "__aaaaaa__"
+        };
+        String[] sold_seat = {
+                "1_2", "4_4", "4_5", "6_6", "6_7", "8_5", "8_6", "8_7", "8_8", "10_1", "10_2", "11_4"
+        };
+        show.name = "12:25";
+        show.seat_map = seat_map;
+        show.sold_seat = sold_seat;
+        return show;
     }
 
     public List<Show> findAll() {
@@ -38,5 +58,9 @@ public class ShowServiceImpl implements ShowService {
         showList.add(show[3]);
 
         return showList;
+    }
+
+    public Show findShowByTheaterIDAndName(int theater_id, String name) {
+        return findOne(123);
     }
 }

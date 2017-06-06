@@ -5,6 +5,6 @@ public class Show {
     public String theater_name;
     public String name;
     public int price;
-    public String seat_map;
-    public String sold_seat;
+    public String[] seat_map;
+    public String[] sold_seat;
 }

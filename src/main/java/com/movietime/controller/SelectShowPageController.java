@@ -38,6 +38,11 @@ public class SelectShowPageController {
                                  HttpSession session) {
         System.out.println("GET@'/selectShow': movie_id='" + movie_id + "'");
 
+        Movie movie = ms.findOne(movie_id);
+        // 检查参数正确性
+        if (movie == null)
+            return "redirect:/";
+
         // 登录状态
         User user = (User) session.getAttribute("user");
         if (user != null) {
@@ -45,23 +50,23 @@ public class SelectShowPageController {
             model.addAttribute("usericon_path", user.iconPath);
         }
 
-        // 电影信息
-        Movie movie = ms.findOne(movie_id);
+        // 将电影信息加入模型
         model.addAttribute("movie", Converter.convert(movie));
 
-        // 场次信息
+        // 将场次按电影院归类
         List<Show> showList = ss.findShowByMovie(movie_id);
-        Map<String, List<Show>> theaterMap = new HashMap<String, List<Show>>();
+        Map<String, List<Show>> showsGroupByTheater = new HashMap<String, List<Show>>();
         for (Show show : showList) {
-            List<Show> showInThisTheater = theaterMap.get(show.theater_name);
+            List<Show> showInThisTheater = showsGroupByTheater.get(show.theater_name);
             if (showInThisTheater == null)
                 showInThisTheater = new LinkedList<Show>();
             showInThisTheater.add(show);
-            theaterMap.put(show.theater_name, showInThisTheater);
+            showsGroupByTheater.put(show.theater_name, showInThisTheater);
         }
+        // 归类后的场次输出到模型
         List<ScheduleForDisplay> scheduleList = new LinkedList<ScheduleForDisplay>();
-        for (String theater : theaterMap.keySet()) {
-            List<Show> showInThisTheaterList = theaterMap.get(theater);
+        for (String theater : showsGroupByTheater.keySet()) {
+            List<Show> showInThisTheaterList = showsGroupByTheater.get(theater);
             ScheduleForDisplay schedule = new ScheduleForDisplay();
             schedule.name = theater;
             schedule.location = "";

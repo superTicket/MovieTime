@@ -1,9 +1,11 @@
 package com.movietime.controller;
 
+import com.movietime.entity.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpSession;
 import java.util.Random;
 
 /**
@@ -25,10 +27,15 @@ public class SelectSeatPageController {
     public String get_selectSeat(@PathVariable("cinema_id") String cinema_id,
                                  @RequestParam("movie_id") String movie_id,
                                  @RequestParam("show_id") String show_id,
-                                 Model model) {
+                                 Model model,
+                                 HttpSession session) {
         System.out.println("POST@'/selectSeat': theater_name='" + cinema_id + "', show='" + show_id + "'");
-        model.addAttribute("username", "Alice");
-        model.addAttribute("usericon_path", "/images/user_icon/p1.png");
+        // 登录状态
+        User user = (User) session.getAttribute("user");
+        if (user != null) {
+            model.addAttribute("username", user.name);
+            model.addAttribute("usericon_path", user.iconPath);
+        }
 
         model.addAttribute("movie_name", "Gingerclown");
         model.addAttribute("show_time", "April 3, 21:00");

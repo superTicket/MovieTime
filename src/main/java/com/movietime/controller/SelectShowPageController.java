@@ -18,10 +18,10 @@ import javax.servlet.http.HttpSession;
 @RequestMapping(value = {"/selectShow", "/selectShow.html"})
 public class SelectShowPageController {
     @RequestMapping(method = RequestMethod.GET)
-    public String get_selectShow(@RequestParam("movieName") String movieName,
+    public String get_selectShow(@RequestParam("movie_id") int movie_id,
                                  Model model,
                                  HttpSession session) {
-        System.out.println("GET@'/selectShow': movieName='" + movieName + "'");
+        System.out.println("GET@'/selectShow': movie_id='" + movie_id + "'");
 
         // 登录状态
         User user = (User) session.getAttribute("user");
@@ -30,6 +30,7 @@ public class SelectShowPageController {
             model.addAttribute("usericon_path", user.iconPath);
         }
 
+        // 获取电影
         MovieforDisplay movie = new MovieforDisplay();
         movie.poster_path = "/images/selectShow/movie-show.jpg";
         movie.release_date = "Jul 10, 2015";

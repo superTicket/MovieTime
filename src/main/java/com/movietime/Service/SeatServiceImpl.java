@@ -1,6 +1,8 @@
 package com.movietime.Service;
 
+import com.movietime.DAO.SeatDAO;
 import com.movietime.entity.Seat;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -10,8 +12,11 @@ import java.util.List;
  */
 @Component
 public class SeatServiceImpl implements SeatService {
+    @Autowired
+    SeatDAO seatDAO;
+
     public List<Seat> findByShowId(long id) {
-        return null;
+        return seatDAO.findByShowId(id);
     }
 
     public String[] getSeatMapByShowId(long id) {

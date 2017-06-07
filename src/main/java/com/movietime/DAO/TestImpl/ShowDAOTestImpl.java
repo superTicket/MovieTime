@@ -43,7 +43,12 @@ public class ShowDAOTestImpl implements ShowDAO {
         return showList;
     }
 
-    public Show findShowByTheaterName(String theater_name) {
-        return null;
+    public List<Show> findShowByTheaterId(long theater_id) {
+        List<Show> showList = new LinkedList<Show>();
+        Show[] showListArray = new Show[4];
+        showListArray[0] = new Show();
+        showListArray[0].time = "08:32";
+        showList.add(showListArray[0]);
+        return showList;
     }
 }

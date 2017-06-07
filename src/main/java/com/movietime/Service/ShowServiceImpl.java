@@ -28,6 +28,13 @@ public class ShowServiceImpl implements ShowService {
     }
 
     public Show findShowByTheaterIDAndtime(long theater_id, String time) {
-        return findOne(123);
+        List<Show> showList = showDAO.findShowByTheaterId(theater_id);
+        if (showList == null) return null;
+        for (int i = 0; i < showList.size(); i++) {
+            Show show = showList.get(i);
+            if (show.time.equals(time))
+                return show;
+        }
+        return null;
     }
 }

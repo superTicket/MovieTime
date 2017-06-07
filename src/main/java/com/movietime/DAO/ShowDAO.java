@@ -14,5 +14,5 @@ public interface ShowDAO {
 
     public List<Show> findShowByMovie(long movie_id);
 
-    public Show findShowByTheaterName(String theater_name);
+    public List<Show> findShowByTheaterId(long theater_id);
 }

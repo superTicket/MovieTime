@@ -5,6 +5,7 @@ import com.movietime.entity.Seat;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -20,32 +21,55 @@ public class SeatServiceImpl implements SeatService {
     }
 
     public String[] getSeatMapByShowId(long id) {
-        return new String[]{  //Seating chart
-                "aaaaaaaaaa",
-                "aaaaaaaaaa",
-                "__________",
-                "aaaaaaaa__",
-                "aaaaaaaaaa",
-                "aaaaaaaaaa",
-                "aaaaaaaaaa",
-                "aaaaaaaaaa",
-                "aaaaaaaaaa",
-                "__aaaaaa__",
-                "__aaaaaa__"
-        };
+        List<Seat> seatList = seatDAO.findByShowId(id);
+        int maxRow = Integer.MIN_VALUE;
+        int maxCol = Integer.MIN_VALUE;
+        for (Seat seat : seatList) {
+            maxRow = maxRow >= seat.row ? maxRow : seat.row;
+            maxCol = maxCol >= seat.col ? maxCol : seat.col;
+        }
+        StringBuffer[] seat_map_buf = new StringBuffer[maxRow];
+        for (int i = 0; i < seat_map_buf.length; i++) {
+            seat_map_buf[i] = new StringBuffer();
+            for (int j = 0; j < maxCol; j++)
+                seat_map_buf[i].append("_");
+        }
+        for (Seat seat : seatList)
+            seat_map_buf[seat.row - 1].setCharAt(seat.col - 1, 'a');
+        String[] seat_map = new String[maxRow];
+        for (int i = 0; i < seat_map_buf.length; i++)
+            seat_map[i] = seat_map_buf[i].toString();
+        return seat_map;
     }
 
     public String[] getSoldSeatByShowId(long id) {
-        return new String[]{
-                "1_2", "4_4", "4_5", "6_6", "6_7", "8_5", "8_6", "8_7", "8_8", "10_1", "10_2", "11_4"
-        };
+        List<Seat> seatList = seatDAO.findByShowId(id);
+        List<String> soldSeatList_str = new LinkedList<String>();
+        for (Seat seat : seatList) {
+            if (seat.isBooked)
+                soldSeatList_str.add(seat.row + "_" + seat.col);
+        }
+        String[] str = soldSeatList_str.toArray(new String[1]);
+        return soldSeatList_str.toArray(new String[1]);
     }
 
     public Seat findByShowIdAndLoc(long id, int row, int col) {
-        return null;
+        return seatDAO.findByShowIdAndLoc(id, row, col);
     }
 
     public boolean book(Seat seat) {
-        return false;
+        List<Seat> seatList = new LinkedList<Seat>();
+        seatList.add(seat);
+        return book(seatList);
+    }
+
+    public boolean book(List<Seat> seatList) {
+        for (Seat seat : seatList) {
+            Seat seatInDB = seatDAO.findByShowIdAndLoc(seat.show_id, seat.row, seat.col);
+            if (seatInDB.isBooked)
+                return false;
+        }
+
+        return seatDAO.update(seatList);
     }
 }

@@ -4,15 +4,19 @@ import com.movietime.Service.MovieService;
 import com.movietime.Service.SeatService;
 import com.movietime.Service.ShowService;
 import com.movietime.entity.Movie;
+import com.movietime.entity.Seat;
 import com.movietime.entity.Show;
 import com.movietime.entity.User;
+import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
-import java.util.Random;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Created by yangzy on 2017/6/5.
@@ -29,17 +33,28 @@ public class SelectSeatPageController {
 
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
-    public String try_bookTicket(String selectedList_JSON, Model model) {
+    public String post_selectSeat(int theater_id, String show_time, String selectedList_JSON, Model model) {
+        System.out.println("POST@'/selectSeat': theater_id=" + theater_id + ", show_time=" + show_time + ", selectedList_JSON=");
         System.out.println(selectedList_JSON);
-
-        int randNum = new Random().nextInt(3);
-        return randNum % 2 == 0 ? "succeed" : "fail";
+        JSONArray jsonArray = JSONArray.fromObject(selectedList_JSON);
+        List<Seat> seatList = new LinkedList<Seat>();
+        Show show = ss.findShowByTheaterIDAndtime(theater_id, show_time);
+        for (int i = 0; i < jsonArray.size(); i++) {
+            JSONObject jsonObject = JSONObject.fromObject(jsonArray.get(i));
+            Seat seat = new Seat();
+            seat.row = (Integer) jsonObject.get("row");
+            seat.col = (Integer) jsonObject.get("col");
+            seat.isBooked = true;
+            seat.show_id = show.id;
+            seatList.add(seat);
+        }
+        return ses.book(seatList) ? "succeed" : "failure";
     }
 
     @RequestMapping(method = RequestMethod.GET)
     public String get_selectSeat(@PathVariable("cinema_id") int theater_id,
                                  @RequestParam("movie_id") int movie_id,
-                                 @RequestParam("show_id") String show_name,
+                                 @RequestParam("show") String show_name,
                                  Model model,
                                  HttpSession session) {
         System.out.println("GET@'/selectSeat': theater_id='" + theater_id + "', show='" + show_name + "'");

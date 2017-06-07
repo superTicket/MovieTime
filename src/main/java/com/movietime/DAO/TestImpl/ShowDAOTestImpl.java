@@ -48,7 +48,16 @@ public class ShowDAOTestImpl implements ShowDAO {
         Show[] showListArray = new Show[4];
         showListArray[0] = new Show();
         showListArray[0].time = "08:32";
+        showListArray[1] = new Show();
+        showListArray[1].time = "11:33";
+        showListArray[2] = new Show();
+        showListArray[2].time = "14:32";
+        showListArray[3] = new Show();
+        showListArray[3].time = "21:50";
         showList.add(showListArray[0]);
+        showList.add(showListArray[2]);
+        showList.add(showListArray[1]);
+        showList.add(showListArray[3]);
         return showList;
     }
 }

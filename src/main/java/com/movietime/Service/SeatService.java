@@ -17,4 +17,7 @@ public interface SeatService {
     Seat findByShowIdAndLoc(long id, int row, int col);
 
     boolean book(Seat seat);
+
+    boolean book(List<Seat> seatList);
+
 }

@@ -13,4 +13,6 @@ public interface SeatDAO {
     Seat findByShowIdAndLoc(long id, int row, int col);
 
     boolean update(Seat seat);
+
+    boolean update(List<Seat> seatList); // 若其中一个update失败则返回false
 }

@@ -30,7 +30,6 @@ public class MovieServiceImp implements MovieService {
         movie.genre = "Action, Romance";
         movie.cast_and_crew = "Prabhas as Amarendra Baahubali and Shivudu, Rana Daggubati as Bhallala Deva in Telugu and Palvaalthevan in Tamil, Anushka Shetty as Devasena, Tamannaah as Avantika, Sathyaraj as Kattappa, Nassar as Bijjala Deva in Telugu and Pingala Devan in Tamil, Ramya Krishnan as Sivagami";
         return movie;
-
     }
 
     public List<String> getAllMovieTags() {

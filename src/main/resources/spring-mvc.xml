@@ -17,7 +17,7 @@
     <context:component-scan base-package="com.movietime"/>
 
 <!--     <bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
-        <property name="securityManager" ref="securityManager"/>
+        <propetimename="securityManager" ref="securityManager"/>
     </bean> -->
 
 

@@ -1,6 +1,7 @@
 package com.movietime.controller;
 
 import com.movietime.Service.MovieService;
+import com.movietime.Service.SeatService;
 import com.movietime.Service.ShowService;
 import com.movietime.entity.Movie;
 import com.movietime.entity.Show;
@@ -23,6 +24,8 @@ public class SelectSeatPageController {
     MovieService ms;
     @Autowired
     ShowService ss;
+    @Autowired
+    SeatService ses;
 
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
@@ -42,7 +45,7 @@ public class SelectSeatPageController {
         System.out.println("GET@'/selectSeat': theater_id='" + theater_id + "', show='" + show_name + "'");
 
         Movie movie = ms.findOne(movie_id);
-        Show show = ss.findShowByTheaterIDAndName(theater_id, show_name);
+        Show show = ss.findShowByTheaterIDAndtime(theater_id, show_name);
         // 检查参数正确性
         if (movie == null || show == null)
             return "redirect:/";
@@ -56,10 +59,10 @@ public class SelectSeatPageController {
 
         // 电影&场次信息
         model.addAttribute("movie_name", movie.name);
-        model.addAttribute("show_time", show.name);
+        model.addAttribute("show_time", show.time);
         model.addAttribute("price", show.price);
-        model.addAttribute("seat_map", show.seat_map);
-        model.addAttribute("sold_seat", show.sold_seat);
+        model.addAttribute("seat_map", ses.getSeatMapByShowId(show.id));
+        model.addAttribute("sold_seat", ses.getSoldSeatByShowId(show.id));
 
         return "selectSeat";
     }

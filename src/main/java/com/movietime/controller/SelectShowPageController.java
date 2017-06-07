@@ -72,7 +72,7 @@ public class SelectShowPageController {
             schedule.location = "";
             schedule.showList = new String[showInThisTheaterList.size()];
             for (int i = 0; i < showInThisTheaterList.size(); i++)
-                schedule.showList[i] = showInThisTheaterList.get(i).name;
+                schedule.showList[i] = showInThisTheaterList.get(i).time;
             scheduleList.add(schedule);
         }
 

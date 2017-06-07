@@ -14,5 +14,5 @@ public interface SeatDAO {
 
     boolean update(Seat seat);
 
-    boolean update(List<Seat> seatList); // 若其中一个update失败则返回false
+    boolean update(List<Seat> seatList); // 若其中一个Record update失败则返回false，并撤销其他Record的update
 }

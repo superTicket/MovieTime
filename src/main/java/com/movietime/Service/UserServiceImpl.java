@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
  */
 
 @Component("UserRepositoryImp")
-public class UserServiceImp implements UserService {
+public class UserServiceImpl implements UserService {
     public User getUserByUsername(String username) {
         return new User();
     }

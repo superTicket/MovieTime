@@ -8,6 +8,7 @@ public class User {
     public String iconPath;
     public String first_name;
     public String last_name;
+    public String password;
 
     public User() {
         this.id = new Random().nextInt();

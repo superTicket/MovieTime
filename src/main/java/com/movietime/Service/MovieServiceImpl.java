@@ -10,7 +10,7 @@ import java.util.List;
  * Created by yangzy on 2017/6/6.
  */
 @Component
-public class MovieServiceImp implements MovieService {
+public class MovieServiceImpl implements MovieService {
     public List<Movie> findAll() {
         List<Movie> movieList = new LinkedList<Movie>();
         movieList.add(new Movie("Guardians of the Galaxy", null, "/images/homepage/banner.jpg"));

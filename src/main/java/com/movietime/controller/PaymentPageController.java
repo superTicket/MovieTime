@@ -21,7 +21,7 @@ public class PaymentPageController {
         // 登录状态
         User user = (User) session.getAttribute("user");
         if (user != null) {
-            model.addAttribute("username", user.name);
+            model.addAttribute("username", user.email);
             model.addAttribute("usericon_path", user.iconPath);
         }
 

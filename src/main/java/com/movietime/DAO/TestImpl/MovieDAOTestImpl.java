@@ -1,5 +1,6 @@
-package com.movietime.Service;
+package com.movietime.DAO.TestImpl;
 
+import com.movietime.DAO.MovieDAO;
 import com.movietime.entity.Movie;
 import org.springframework.stereotype.Component;
 
@@ -7,10 +8,23 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * Created by yangzy on 2017/6/6.
+ * Created by yangzy on 2017/6/7.
  */
 @Component
-public class MovieServiceImp implements MovieService {
+public class MovieDAOTestImpl implements MovieDAO {
+    public Movie findOne(long id) {
+        Movie movie = new Movie();
+        movie.poster_path = "/images/selectShow/movie-show.jpg";
+        movie.release_date = "Jul 10, 2015";
+        movie.duration = "2 hrs 30 mins";
+        movie.director = "S.S. Rajamouli.";
+        movie.language = "Telugu";
+        movie.name = "Obama VS Trump";
+        movie.genre = "Action, Romance";
+        movie.cast_and_crew = "Prabhas as Amarendra Baahubali and Shivudu, Rana Daggubati as Bhallala Deva in Telugu and Palvaalthevan in Tamil, Anushka Shetty as Devasena, Tamannaah as Avantika, Sathyaraj as Kattappa, Nassar as Bijjala Deva in Telugu and Pingala Devan in Tamil, Ramya Krishnan as Sivagami";
+        return movie;
+    }
+
     public List<Movie> findAll() {
         List<Movie> movieList = new LinkedList<Movie>();
         movieList.add(new Movie("Guardians of the Galaxy", null, "/images/homepage/banner.jpg"));
@@ -19,20 +33,7 @@ public class MovieServiceImp implements MovieService {
         return movieList;
     }
 
-    public Movie findOne(int id) {
-        return null;
-    }
-
-    public List<String> getAllMovieTags() {
-        List<String> tagList = new LinkedList<String>();
-        tagList.add("Featured");
-        tagList.add("Top viewed");
-        tagList.add("Top Rating");
-        tagList.add("Recently Added");
-        return tagList;
-    }
-
-    public List<Movie> getMovieByTag(String tag) {
+    public List<Movie> findMovieByTag(String tag) {
         List<Movie> movieList = new LinkedList<Movie>();
         if (tag.equals("Featured")) {
             movieList.add(new Movie("God’s Compass", "/images/homepage/featureMoviesImages/m15.jpg"));
@@ -62,5 +63,9 @@ public class MovieServiceImp implements MovieService {
             movieList = null;
         }
         return movieList;
+    }
+
+    public List<String> getTags() {
+        return null;
     }
 }

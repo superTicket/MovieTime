@@ -16,12 +16,11 @@ public class Converter {
         movieforDisplay.director = movie.director;
         movieforDisplay.duration = movie.duration;
         movieforDisplay.genre = movie.genre;
-        movieforDisplay.id = movie.id;
+        movieforDisplay.id = (int) movie.id;
         movieforDisplay.language = movie.language;
         movieforDisplay.name = movie.name;
         movieforDisplay.poster_path = movie.poster_path;
         movieforDisplay.release_date = movie.release_date;
-
         return movieforDisplay;
     }
 

@@ -30,9 +30,9 @@ public class LoginPageController {
 
     @RequestMapping(method = RequestMethod.POST)
     public String post_login(String email, String password, Model model, HttpSession session) {
-        User user = us.getUserByUsername(email);
-        if (user != null) {
-            if (us.checkPassword(email)) {
+        if (us.isRegistered(email)) {
+            if (us.checkPassword(email, password)) {
+                User user = us.getUserInstance(email, password);
                 session.setAttribute("user", user);
                 return "redirect:/";
             }

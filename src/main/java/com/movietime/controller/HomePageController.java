@@ -1,6 +1,7 @@
 package com.movietime.controller;
 
 import com.movietime.Service.MovieService;
+import com.movietime.Service.TagService;
 import com.movietime.VO.BannerforDisplay;
 import com.movietime.VO.Converter;
 import com.movietime.VO.MovieforDisplay;
@@ -22,13 +23,15 @@ import java.util.List;
 public class HomePageController {
     @Autowired
     MovieService ms;
+    @Autowired
+    TagService ts;
 
     @RequestMapping(method = RequestMethod.GET)
     public String get_homepage(Model model, HttpSession session) {
         // 登录状态
         User user = (User) session.getAttribute("user");
         if (user != null) {
-            model.addAttribute("username", user.name);
+            model.addAttribute("username", user.email);
             model.addAttribute("usericon_path", user.iconPath);
         }
 
@@ -52,7 +55,7 @@ public class HomePageController {
         }
 
         // 从数据库获取panel，注入模型. 每个panel与数据库中的tag对应
-        List<String> tagList = ms.getAllMovieTags();
+        List<String> tagList = ts.getAllMovieTags();
         PanelforDisplay[] panelList = new PanelforDisplay[tagList.size()];
         for (int i = 0; i < tagList.size(); i++) {
             // 将panel元数据注入模型
@@ -61,7 +64,7 @@ public class HomePageController {
             panelList[i].name = tag;
             if (i == 0) panelList[i].active = true;
             // 将与该panel相关的电影注入模型
-            List<Movie> relevantMovieList = ms.getMovieByTag(tag);
+            List<Movie> relevantMovieList = ts.getMovieByTag(tag);
             List<Movie> noPosterList = new LinkedList<Movie>(); // 排除没有poster的电影
             for (Movie movie : relevantMovieList) {
                 if (movie.poster_path == null)

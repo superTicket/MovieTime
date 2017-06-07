@@ -32,9 +32,9 @@ public class RegisterPageController {
                 Validator.checkName(first_name) &&
                 Validator.checkName(last_name) &&
                 password.equals(confirm_password) &&
-                us.getUserByUsername(email) == null) {
+                us.isRegistered(email)) {
             us.registerUser(email, password, first_name, last_name);
-            session.setAttribute("user", us.getUserByUsername(email));
+            session.setAttribute("user", us.getUserInstance(email, password));
             return "redirect:/";
         }
         return "redirect:/register";

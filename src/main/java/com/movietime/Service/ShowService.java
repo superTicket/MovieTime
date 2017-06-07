@@ -8,11 +8,11 @@ import java.util.List;
  * Created by yangzy on 2017/6/6.
  */
 public interface ShowService {
-    public Show findOne(int show_id);
+    public Show findOne(long show_id);
 
     public List<Show> findAll();
 
-    public List<Show> findShowByMovie(int movie_id);
+    public List<Show> findShowByMovie(long movie_id);
 
-    public Show findShowByTheaterIDAndtime(int theater_id, String name);
+    public Show findShowByTheaterIDAndtime(long theater_id, String name);
 }

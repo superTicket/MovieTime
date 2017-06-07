@@ -10,7 +10,7 @@ public interface UserDAO {
 
     User findOne(long id);
 
-    boolean InsertOne(User user);
+    boolean InsertOne(String email, String password, String first_name, String last_name);
 
     boolean UpdateOne(long id, User user);
 }

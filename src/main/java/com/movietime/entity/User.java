@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class User {
     public long id;
-    public String name;
+    public String email;
     public String iconPath;
     public String first_name;
     public String last_name;
@@ -12,13 +12,13 @@ public class User {
 
     public User() {
         this.id = new Random().nextInt();
-        this.name = "Alice";
+        this.email = "Alice";
         this.iconPath = "/images/user_icon/p1.png";
     }
 
-    public User(String username, String iconPath) {
+    public User(String email, String iconPath) {
         this.id = new Random().nextInt();
-        this.name = username;
+        this.email = email;
         this.iconPath = iconPath;
     }
 }

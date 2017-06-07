@@ -12,7 +12,5 @@ public interface MovieDAO {
 
     List<Movie> findAll();
 
-    List<Movie> getMovieByTag(String tag);
-
-    List<String> getTags();
+    List<Movie> findMovieByTag(String tag);
 }

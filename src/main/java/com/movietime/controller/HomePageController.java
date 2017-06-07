@@ -39,7 +39,7 @@ public class HomePageController {
         for (int i = 0; i < movieList.size(); i++) {
             Movie movie = movieList.get(i);
             if (movie.banner_path != null) {
-                bannerList.add(new BannerforDisplay(movie.id, movie.name, movie.banner_path));
+                bannerList.add(new BannerforDisplay((int) movie.id, movie.name, movie.banner_path));
                 toBeDeleted.add(movie);
             }
         }

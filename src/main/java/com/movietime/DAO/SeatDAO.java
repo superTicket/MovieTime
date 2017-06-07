@@ -8,9 +8,9 @@ import java.util.List;
  * Created by yangzy on 2017/6/7.
  */
 public interface SeatDAO {
-    List<Seat> findByShowId(int id);
+    List<Seat> findByShowId(long id);
 
-    Seat findByShowIdAndLoc(int id, int row, int col);
+    Seat findByShowIdAndLoc(long id, int row, int col);
 
     boolean update(Seat seat);
 }

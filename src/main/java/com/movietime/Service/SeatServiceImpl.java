@@ -10,11 +10,11 @@ import java.util.List;
  */
 @Component
 public class SeatServiceImpl implements SeatService {
-    public List<Seat> findByShowId(int id) {
+    public List<Seat> findByShowId(long id) {
         return null;
     }
 
-    public String[] getSeatMapByShowId(int id) {
+    public String[] getSeatMapByShowId(long id) {
         return new String[]{  //Seating chart
                 "aaaaaaaaaa",
                 "aaaaaaaaaa",
@@ -30,13 +30,13 @@ public class SeatServiceImpl implements SeatService {
         };
     }
 
-    public String[] getSoldSeatByShowId(int id) {
+    public String[] getSoldSeatByShowId(long id) {
         return new String[]{
                 "1_2", "4_4", "4_5", "6_6", "6_7", "8_5", "8_6", "8_7", "8_8", "10_1", "10_2", "11_4"
         };
     }
 
-    public Seat findByShowIdAndLoc(int id, int row, int col) {
+    public Seat findByShowIdAndLoc(long id, int row, int col) {
         return null;
     }
 

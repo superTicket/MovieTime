@@ -8,9 +8,9 @@ import com.movietime.entity.User;
 public interface UserDAO {
     User findByUsername(String username);
 
-    User findOne(int id);
+    User findOne(long id);
 
     boolean InsertOne(User user);
 
-    boolean UpdateOne(int id, User user);
+    boolean UpdateOne(long id, User user);
 }

@@ -8,13 +8,13 @@ import java.util.List;
  * Created by yangzy on 2017/6/7.
  */
 public interface SeatService {
-    List<Seat> findByShowId(int id);
+    List<Seat> findByShowId(long id);
 
-    String[] getSeatMapByShowId(int id);
+    String[] getSeatMapByShowId(long id);
 
-    String[] getSoldSeatByShowId(int id);
+    String[] getSoldSeatByShowId(long id);
 
-    Seat findByShowIdAndLoc(int id, int row, int col);
+    Seat findByShowIdAndLoc(long id, int row, int col);
 
     boolean book(Seat seat);
 }

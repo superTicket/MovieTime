@@ -4,7 +4,7 @@ import java.util.Random;
 
 // 这个类用于传输给模板
 public class Movie {
-    public int id;
+    public long id;
     public String name; // 注意：属性名在模板里有使用，不要轻易修改！
     public String poster_path;
     public String banner_path;

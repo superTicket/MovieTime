@@ -56,7 +56,7 @@ function proceed() {
             method: 'POST',
             data: {
                 theater_id: get_theater_id(),
-                show_time: show_time,
+                show_id: show_id,
                 selectedList_JSON: JSON.stringify(selectedList)
             },
             success: function (data) {

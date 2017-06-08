@@ -18,13 +18,8 @@ public class PaymentPageController {
         // 登录状态
         User user = (User) session.getAttribute("user");
         if (user != null) {
-<<<<<<< HEAD
             model.addAttribute("username", user.getEmail());
             model.addAttribute("usericon_path", user.getIconPath());
-=======
-            model.addAttribute("username", user.email);
-            model.addAttribute("usericon_path", user.iconPath);
->>>>>>> origin/master
         }
 
         model.addAttribute("movie_name", "Baahubali");

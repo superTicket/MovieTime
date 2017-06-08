@@ -1,6 +1,5 @@
 package com.movietime.entity;
 
-<<<<<<< HEAD
 import java.io.Serializable;
 
 public class Show implements Serializable {
@@ -68,15 +67,4 @@ public class Show implements Serializable {
     public void setSoldSeat(String[] soldSeat) {
         this.soldSeat = soldSeat;
     }
-=======
-public class Show {
-    public long id;
-    public long theater_id;
-    public String theater_name;
-    public String time;
-    public int price;
-    public long movie_id;
-    public String[] seat_map;
-    public String[] sold_seat;
->>>>>>> origin/master
 }

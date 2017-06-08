@@ -1,38 +1,35 @@
-package com.movietime.Service;
+package com.movietime.service;
 
-import com.movietime.DAO.ShowDAO;
+import com.movietime.dao.ShowDao;
 import com.movietime.entity.Show;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-/**
- * Created by yangzy on 2017/6/6.
- */
-@Component
+@Service
 public class ShowServiceImpl implements ShowService {
     @Autowired
-    ShowDAO showDAO;
+    ShowDao showDao;
 
-    public Show findOne(long show_id) {
-        return showDAO.findOne(show_id);
+    public Show findOne(long showId) {
+        return showDao.findOne(showId);
     }
 
     public List<Show> findAll() {
-        return showDAO.findAll();
+        return showDao.findAll();
     }
 
-    public List<Show> findShowByMovie(long movie_id) {
-        return showDAO.findShowByMovie(movie_id);
+    public List<Show> findByMovie(long movieId) {
+        return showDao.findByMovie(movieId);
     }
 
-    public Show findShowByTheaterIDAndtime(long theater_id, String time) {
-        List<Show> showList = showDAO.findShowByTheaterId(theater_id);
+    public Show findShowByTheaterIdAndTime(long theaterId, String time) {
+        List<Show> showList = showDao.findByTheaterId(theaterId);
         if (showList == null) return null;
         for (int i = 0; i < showList.size(); i++) {
             Show show = showList.get(i);
-            if (show.time.equals(time))
+            if (show.getTime().equals(time))
                 return show;
         }
         return null;

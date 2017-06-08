@@ -1,12 +1,7 @@
-package com.movietime.DAO;
+package com.movietime.dao;
 
 import java.util.List;
 
-/**
- * Created by yangzy on 2017/6/7.
- */
-public interface TagDAO {
-    public List<String> getAllMovieTags();
-
-    public List<Integer> findMovieIdByTagName(String tag_name);
+public interface TagDao {
+    public List<String> findAllName();
 }

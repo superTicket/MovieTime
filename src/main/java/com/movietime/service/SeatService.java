@@ -1,20 +1,20 @@
-package com.movietime.Service;
+package com.movietime.service;
 
 import com.movietime.entity.Seat;
 
 import java.util.List;
 
-/**
- * Created by yangzy on 2017/6/7.
- */
 public interface SeatService {
-    List<Seat> findByShowId(long id);
+    List<Seat> findByShowId(long showId);
 
-    String[] getSeatMapByShowId(long id);
+    String[] getSeatMapByShowId(long showId);
 
-    String[] getSoldSeatByShowId(long id);
+    String[] getSoldSeatByShowId(long showId);
 
-    Seat findByShowIdAndLoc(long id, int row, int col);
+    Seat findByShowIdAndLoc(long showId, int row, int col);
 
     boolean book(Seat seat);
+
+    boolean book(List<Seat> seatList);
+
 }

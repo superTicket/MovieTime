@@ -1,12 +1,7 @@
 package com.movietime.controller;
 
-<<<<<<< HEAD
 import com.movietime.service.UserService;
 import com.movietime.util.Validator;
-=======
-import com.movietime.Service.UserService;
-import com.movietime.Utils.Validator;
->>>>>>> origin/master
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,10 +10,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpSession;
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
 
 @Controller
 @RequestMapping(value = "/register")

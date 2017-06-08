@@ -1,20 +1,11 @@
 package com.movietime.controller;
 
-<<<<<<< HEAD
 import com.movietime.service.MovieService;
 import com.movietime.service.TagService;
 import com.movietime.vo.BannerVO;
 import com.movietime.vo.Converter;
 import com.movietime.vo.MovieVO;
 import com.movietime.vo.PanelVO;
-=======
-import com.movietime.Service.MovieService;
-import com.movietime.Service.TagService;
-import com.movietime.VO.BannerforDisplay;
-import com.movietime.VO.Converter;
-import com.movietime.VO.MovieforDisplay;
-import com.movietime.VO.PanelforDisplay;
->>>>>>> origin/master
 import com.movietime.entity.Movie;
 import com.movietime.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,13 +31,8 @@ public class HomePageController {
         // 登录状态
         User user = (User) session.getAttribute("user");
         if (user != null) {
-<<<<<<< HEAD
             model.addAttribute("username", user.getEmail());
             model.addAttribute("usericon_path", user.getIconPath());
-=======
-            model.addAttribute("username", user.email);
-            model.addAttribute("usericon_path", user.iconPath);
->>>>>>> origin/master
         }
 
         List<Movie> movieList = ms.findAll();
@@ -55,13 +41,8 @@ public class HomePageController {
         List<Movie> toBeDeleted = new LinkedList<Movie>();
         for (int i = 0; i < movieList.size(); i++) {
             Movie movie = movieList.get(i);
-<<<<<<< HEAD
             if (movie.getBannerPath() != null) {
                 bannerList.add(new BannerVO((int) movie.getId(), movie.getName(), movie.getBannerPath()));
-=======
-            if (movie.banner_path != null) {
-                bannerList.add(new BannerforDisplay((int) movie.id, movie.name, movie.banner_path));
->>>>>>> origin/master
                 toBeDeleted.add(movie);
             }
         }
@@ -74,13 +55,8 @@ public class HomePageController {
         }
 
         // 从数据库获取panel，注入模型. 每个panel与数据库中的tag对应
-<<<<<<< HEAD
         List<String> tagList = ts.findAllName();
         PanelVO[] panelList = new PanelVO[tagList.size()];
-=======
-        List<String> tagList = ts.getAllMovieTags();
-        PanelforDisplay[] panelList = new PanelforDisplay[tagList.size()];
->>>>>>> origin/master
         for (int i = 0; i < tagList.size(); i++) {
             // 将panel元数据注入模型
             String tag = tagList.get(i);

@@ -1,37 +1,32 @@
-package com.movietime.Service;
+package com.movietime.service;
 
-import com.movietime.DAO.UserDAO;
+import com.movietime.dao.UserDao;
 import com.movietime.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-/**
- * Created by yangzy on 2017/6/6.
- */
-
-@Component("UserRepositoryImp")
+@Service
 public class UserServiceImpl implements UserService {
     @Autowired
-    UserDAO userDAO;
+    UserDao userDao;
 
     public boolean isRegistered(String username) {
-        return userDAO.findByUsername(username) != null;
+        return userDao.findByUsername(username) != null;
     }
 
     public boolean checkPassword(String username, String password_input) {
-        User user = userDAO.findByUsername(username);
-        return user.password.equals(password_input);
+        User user = userDao.findByUsername(username);
+        return user.getPassword().equals(password_input);
     }
 
     public boolean registerUser(String username, String password, String first_name, String last_name) {
-        return userDAO.InsertOne(username, password, first_name, last_name);
+        return userDao.InsertOne(username, password, first_name, last_name);
     }
 
     public User getUserInstance(String username, String password) {
-        User user = userDAO.findByUsername(username);
-        if (user.password.equals(password))
+        User user = userDao.findByUsername(username);
+        if (user.getPassword().equals(password))
             return user;
         return null;
     }
 }
-

@@ -1,8 +1,13 @@
 package com.movietime.controller;
 
-import com.movietime.VO.MovieforDisplay;
-import com.movietime.VO.TheaterForDisplay;
+import com.movietime.service.MovieService;
+import com.movietime.service.ShowService;
+import com.movietime.vo.Converter;
+import com.movietime.vo.ScheduleVO;
+import com.movietime.entity.Movie;
+import com.movietime.entity.Show;
 import com.movietime.entity.User;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,54 +15,65 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpSession;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
 
-/**
- * Created by yangzy on 2017/6/5.
- */
 @Controller
 @RequestMapping(value = {"/selectShow", "/selectShow.html"})
 public class SelectShowPageController {
+    @Autowired
+    MovieService ms;
+
+    @Autowired
+    ShowService ss;
+
     @RequestMapping(method = RequestMethod.GET)
-    public String get_selectShow(@RequestParam("movie_id") int movie_id,
+    public String get_selectShow(@RequestParam("movieId") int movie_id,
                                  Model model,
                                  HttpSession session) {
-        System.out.println("GET@'/selectShow': movie_id='" + movie_id + "'");
+        System.out.println("GET@'/selectShow': movieId='" + movie_id + "'");
+
+        Movie movie = ms.findOne(movie_id);
+        // 检查参数正确性
+        if (movie == null)
+            return "redirect:/";
 
         // 登录状态
         User user = (User) session.getAttribute("user");
         if (user != null) {
-            model.addAttribute("username", user.name);
-            model.addAttribute("usericon_path", user.iconPath);
+            model.addAttribute("username", user.getEmail());
+            model.addAttribute("usericon_path", user.getIconPath());
         }
 
-        // 获取电影
+        // 将电影信息加入模型
+        model.addAttribute("movie", Converter.convert(movie));
 
-        MovieforDisplay movie = new MovieforDisplay();
-        movie.poster_path = "/images/selectShow/movie-show.jpg";
-        movie.release_date = "Jul 10, 2015";
-        movie.duration = "2 hrs 30 mins";
-        movie.director = "S.S. Rajamouli.";
-        movie.language = "Telugu";
-        movie.genre = "Action, Romance";
-        movie.cast_and_crew = "Prabhas as Amarendra Baahubali and Shivudu, Rana Daggubati as Bhallala Deva in Telugu and Palvaalthevan in Tamil, Anushka Shetty as Devasena, Tamannaah as Avantika, Sathyaraj as Kattappa, Nassar as Bijjala Deva in Telugu and Pingala Devan in Tamil, Ramya Krishnan as Sivagami";
-        model.addAttribute("movie", movie);
+        // 将场次按电影院归类
+        List<Show> showList = ss.findByMovie(movie_id);
+        Map<String, List<Show>> showsGroupByTheater = new HashMap<String, List<Show>>();
+        for (Show show : showList) {
+            List<Show> showInThisTheater = showsGroupByTheater.get(show.getTheaterName());
+            if (showInThisTheater == null)
+                showInThisTheater = new LinkedList<Show>();
+            showInThisTheater.add(show);
+            showsGroupByTheater.put(show.getTheaterName(), showInThisTheater);
+        }
+        // 归类后的场次输出到模型
+        List<ScheduleVO> scheduleList = new LinkedList<ScheduleVO>();
+        for (String theater : showsGroupByTheater.keySet()) {
+            List<Show> showInThisTheaterList = showsGroupByTheater.get(theater);
+            ScheduleVO schedule = new ScheduleVO();
+            schedule.name = theater;
+            schedule.location = "";
+            schedule.showList = new String[showInThisTheaterList.size()];
+            for (int i = 0; i < showInThisTheaterList.size(); i++)
+                schedule.showList[i] = showInThisTheaterList.get(i).getTime();
+            scheduleList.add(schedule);
+        }
 
-        TheaterForDisplay[] theaterList = new TheaterForDisplay[2];
-        theaterList[0] = new TheaterForDisplay();
-        theaterList[0].name = "King Street TheaterForDisplay";
-        theaterList[0].location = "123 Street";
-        theaterList[0].showList = new String[2];
-        theaterList[0].showList[0] = "08:32";
-        theaterList[0].showList[1] = "11:33";
-
-        theaterList[1] = new TheaterForDisplay();
-        theaterList[1].name = "StoneBraker TheaterForDisplay";
-        theaterList[1].location = "666 Street";
-        theaterList[1].showList = new String[2];
-        theaterList[1].showList[0] = "14:32";
-        theaterList[1].showList[1] = "21:50";
-
-        model.addAttribute("theaterList", theaterList);
+        model.addAttribute("theaterList", scheduleList.toArray());
 
         return "selectShow";
     }

@@ -1,14 +1,14 @@
-package com.movietime.VO;
+package com.movietime.vo;
 
 import java.util.Random;
 
-public class PanelforDisplay {
+public class PanelVO {
     public String name;
-    public MovieforDisplay[] movieList;
+    public MovieVO[] movieList;
     public boolean active;
     public int id;
 
-    public PanelforDisplay() {
+    public PanelVO() {
         active = false;
         id = new Random().nextInt();
     }

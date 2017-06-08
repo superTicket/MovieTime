@@ -1,16 +1,13 @@
-package com.movietime.Service;
+package com.movietime.service;
 
 import com.movietime.entity.Show;
 
 import java.util.List;
 
-/**
- * Created by yangzy on 2017/6/6.
- */
 public interface ShowService {
-    public Show findOne(int show_id);
 
+    public Show findOne(long showId);
     public List<Show> findAll();
-
-    public List<Show> findShowByMovie(int movie_id);
+    public List<Show> findByMovie(long movieId);
+    public Show findShowByTheaterIdAndTime(long theaterId, String name);
 }

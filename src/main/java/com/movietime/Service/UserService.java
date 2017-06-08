@@ -1,12 +1,12 @@
-package com.movietime.Service;
+package com.movietime.service;
 
 import com.movietime.entity.User;
 
-/**
- * Created by yangzy on 2017/6/6.
- */
 public interface UserService {
-    User getUserByUsername(String username);
+    boolean isRegistered(String username);
 
-    boolean checkPassword(String username);
+    boolean checkPassword(String username, String passwordInput);
+    boolean registerUser(String username, String password, String firstName, String lastName);
+
+    User getUserInstance(String username, String password);
 }

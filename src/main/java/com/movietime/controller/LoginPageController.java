@@ -1,6 +1,6 @@
 package com.movietime.controller;
 
-import com.movietime.Service.UserService;
+import com.movietime.service.UserService;
 import com.movietime.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -9,10 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpSession;
-
-/**
- * Created by yangzy on 2017/6/5.
- */
 
 @Controller
 @RequestMapping(value={"/login", "/login.html"})
@@ -30,9 +26,9 @@ public class LoginPageController {
 
     @RequestMapping(method = RequestMethod.POST)
     public String post_login(String email, String password, Model model, HttpSession session) {
-        User user = us.getUserByUsername(email);
-        if (user != null) {
-            if (us.checkPassword(email)) {
+        if (us.isRegistered(email)) {
+            if (us.checkPassword(email, password)) {
+                User user = us.getUserInstance(email, password);
                 session.setAttribute("user", user);
                 return "redirect:/";
             }

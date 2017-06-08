@@ -1,18 +1,12 @@
-package com.movietime.Service;
+package com.movietime.service;
 
 import com.movietime.entity.Movie;
 
 import java.util.List;
 
-/**
- * Created by yangzy on 2017/6/6.
- */
 public interface MovieService {
-    Movie findOne(int id);
 
-    List<Movie> findAll();
-
-    List<Movie> getMovieByTag(String tag);
-
-    List<String> getAllMovieTags();
+    public Movie findOne(long id);
+    public List<Movie> findAll();
+    public List<Movie> findByTagName(String tagName);
 }

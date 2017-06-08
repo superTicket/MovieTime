@@ -1,14 +1,14 @@
-package com.movietime.VO;
+package com.movietime.vo;
 
 import java.util.Random;
 
-public class TheaterForDisplay {
+public class ScheduleVO {
     public int id;
     public String name;
     public String location;
     public String [] showList;
 
-    public TheaterForDisplay() {
+    public ScheduleVO() {
         this.id = new Random().nextInt();
     }
 }

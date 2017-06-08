@@ -92,7 +92,7 @@
                             $total = $('#total'); //Total money
 
                         var sc = $('#seat-map').seatCharts({
-                            map: [[${seat_map}]],
+                            map: [[${seatMap}]],
                             naming : {
                                 top : false,
                                 getLabel : function (character, row, column) {
@@ -141,7 +141,7 @@
                             }
                         });
                         //sold seat
-                        sc.get([[${sold_seat}]]).status('unavailable');
+                        sc.get([[${soldSeat}]]).status('unavailable');
 
                     });
                     //sum total money

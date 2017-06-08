@@ -10,9 +10,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpSession;
 import java.util.Random;
 
-/**
- * Created by yangzy on 2017/6/5.
- */
 @Controller
 @RequestMapping(value = "/payment")
 public class PaymentPageController {
@@ -21,8 +18,8 @@ public class PaymentPageController {
         // 登录状态
         User user = (User) session.getAttribute("user");
         if (user != null) {
-            model.addAttribute("username", user.name);
-            model.addAttribute("usericon_path", user.iconPath);
+            model.addAttribute("username", user.getEmail());
+            model.addAttribute("usericon_path", user.getIconPath());
         }
 
         model.addAttribute("movie_name", "Baahubali");
@@ -32,7 +29,7 @@ public class PaymentPageController {
         model.addAttribute("show_time", "11:30am");
         model.addAttribute("seat", "Balkani-s12(a)");
         model.addAttribute("total", 150);
-        model.addAttribute("extra_fees_note", "+ (Internet handling fees : RMB. 42.00 (incl. of Service Tax))");
+        model.addAttribute("extra_fees_note", "+ (Internet handling fees : RMB. 42.00 (incl. of service Tax))");
         model.addAttribute("grand_total", 192);
 
         return "payment";

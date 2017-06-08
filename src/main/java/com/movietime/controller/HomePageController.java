@@ -1,10 +1,11 @@
 package com.movietime.controller;
 
-import com.movietime.Service.MovieService;
-import com.movietime.VO.BannerforDisplay;
-import com.movietime.VO.Converter;
-import com.movietime.VO.MovieforDisplay;
-import com.movietime.VO.PanelforDisplay;
+import com.movietime.service.MovieService;
+import com.movietime.service.TagService;
+import com.movietime.vo.BannerVO;
+import com.movietime.vo.Converter;
+import com.movietime.vo.MovieVO;
+import com.movietime.vo.PanelVO;
 import com.movietime.entity.Movie;
 import com.movietime.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,24 +23,26 @@ import java.util.List;
 public class HomePageController {
     @Autowired
     MovieService ms;
+    @Autowired
+    TagService ts;
 
     @RequestMapping(method = RequestMethod.GET)
     public String get_homepage(Model model, HttpSession session) {
         // 登录状态
         User user = (User) session.getAttribute("user");
         if (user != null) {
-            model.addAttribute("username", user.name);
-            model.addAttribute("usericon_path", user.iconPath);
+            model.addAttribute("username", user.getEmail());
+            model.addAttribute("usericon_path", user.getIconPath());
         }
 
         List<Movie> movieList = ms.findAll();
         // 从数据库获取banner，注入模型
-        List<BannerforDisplay> bannerList = new LinkedList<BannerforDisplay>();
+        List<BannerVO> bannerList = new LinkedList<BannerVO>();
         List<Movie> toBeDeleted = new LinkedList<Movie>();
         for (int i = 0; i < movieList.size(); i++) {
             Movie movie = movieList.get(i);
-            if (movie.banner_path != null) {
-                bannerList.add(new BannerforDisplay(movie.id, movie.name, movie.banner_path));
+            if (movie.getBannerPath() != null) {
+                bannerList.add(new BannerVO((int) movie.getId(), movie.getName(), movie.getBannerPath()));
                 toBeDeleted.add(movie);
             }
         }
@@ -52,23 +55,23 @@ public class HomePageController {
         }
 
         // 从数据库获取panel，注入模型. 每个panel与数据库中的tag对应
-        List<String> tagList = ms.getAllMovieTags();
-        PanelforDisplay[] panelList = new PanelforDisplay[tagList.size()];
+        List<String> tagList = ts.findAllName();
+        PanelVO[] panelList = new PanelVO[tagList.size()];
         for (int i = 0; i < tagList.size(); i++) {
             // 将panel元数据注入模型
             String tag = tagList.get(i);
-            panelList[i] = new PanelforDisplay();
+            panelList[i] = new PanelVO();
             panelList[i].name = tag;
             if (i == 0) panelList[i].active = true;
             // 将与该panel相关的电影注入模型
-            List<Movie> relevantMovieList = ms.getMovieByTag(tag);
+            List<Movie> relevantMovieList = ts.getMovieByTag(tag);
             List<Movie> noPosterList = new LinkedList<Movie>(); // 排除没有poster的电影
             for (Movie movie : relevantMovieList) {
-                if (movie.poster_path == null)
+                if (movie.getPosterPath() == null)
                     noPosterList.add(movie);
             }
             relevantMovieList.removeAll(noPosterList);
-            panelList[i].movieList = Converter.convert(relevantMovieList).toArray(new MovieforDisplay[1]);
+            panelList[i].movieList = Converter.convert(relevantMovieList).toArray(new MovieVO[1]);
         }
         model.addAttribute("panelList", panelList);
         return "homepage";

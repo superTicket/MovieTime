@@ -1101,7 +1101,7 @@
       <workItem from="1496910748585" duration="884000" />
       <workItem from="1496912680757" duration="3000" />
       <workItem from="1496912936429" duration="1050000" />
-      <workItem from="1496916661365" duration="725000" />
+      <workItem from="1496916661365" duration="736000" />
     </task>
     <task id="LOCAL-00001" summary="重构&#10;1. 重构Controller&#10;2. 重新设计URL&#10;3. 补充一些图片">
       <created>1496681550859</created>
@@ -1264,11 +1264,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496916708059</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="不可抗力">
+      <created>1496923044673</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1496923044674</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80814000" />
+    <option name="totallyTimeSpent" value="80825000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />

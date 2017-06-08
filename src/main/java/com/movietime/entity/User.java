@@ -3,6 +3,7 @@ package com.movietime.entity;
 import java.io.Serializable;
 import java.util.Random;
 
+<<<<<<< HEAD
 public class User implements Serializable {
     private static final long serialVersionUID = 1L;
     private long id;
@@ -11,6 +12,15 @@ public class User implements Serializable {
     private String firstName;
     private String lastName;
     private String password;
+=======
+public class User {
+    public long id;
+    public String email;
+    public String iconPath;
+    public String first_name;
+    public String last_name;
+    public String password;
+>>>>>>> origin/master
 
     public User() {
         this.id = new Random().nextInt();

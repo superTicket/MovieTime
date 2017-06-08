@@ -1,5 +1,6 @@
 package com.movietime.entity;
 
+<<<<<<< HEAD
 import java.io.Serializable;
 
 public class Seat implements Serializable {
@@ -40,4 +41,11 @@ public class Seat implements Serializable {
     public void setBooked(boolean booked) {
         isBooked = booked;
     }
+=======
+public class Seat {
+    public long show_id;  // reference
+    public int row;
+    public int col;
+    public boolean isBooked;
+>>>>>>> origin/master
 }

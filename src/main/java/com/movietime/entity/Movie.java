@@ -3,6 +3,7 @@ package com.movietime.entity;
 import java.io.Serializable;
 import java.util.Random;
 
+<<<<<<< HEAD
 public class Movie implements Serializable {
     private static final long serialVersionUID = 1L;
     private long id;
@@ -15,6 +16,20 @@ public class Movie implements Serializable {
     private String language;
     private String genre;
     private String castAndCrew;
+=======
+// 这个类用于传输给模板
+public class Movie {
+    public long id;
+    public String name; // 注意：属性名在模板里有使用，不要轻易修改！
+    public String poster_path;
+    public String banner_path;
+    public String release_date;
+    public String duration;
+    public String director;
+    public String language;
+    public String genre;
+    public String cast_and_crew;
+>>>>>>> origin/master
 
     public Movie() {
         this.id = new Random().nextInt();

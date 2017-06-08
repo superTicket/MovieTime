@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="7489e18b-7954-4161-bcc3-4aadf3b91cc2" name="Default" comment="BUG FIX" />
+=======
+    <list default="true" id="7489e18b-7954-4161-bcc3-4aadf3b91cc2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/UML/MovieTimeDeploy.uxf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/UML/MovieTimePackage.uxf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/UML/MovieTimePartSeq.uxf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/UML/MovieTimeProcess.uxf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+>>>>>>> origin/master
     <ignored path="MovieTime.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,6 +32,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file leaf-file-name="Movie.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/entity/Movie.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -57,11 +68,19 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+=======
+      <file leaf-file-name="MovieService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/Service/MovieService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+>>>>>>> origin/master
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="ShowDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/dao/ShowDao.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -87,21 +106,37 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
               <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+=======
+      <file leaf-file-name="SeatServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/Service/SeatServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="30" column="29" lean-forward="false" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+>>>>>>> origin/master
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="MovieServiceImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/service/MovieServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+=======
+      <file leaf-file-name="MovieTimeDeploy.uxf" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/UML/MovieTimeDeploy.uxf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> origin/master
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="SelectSeatPageController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/controller/SelectSeatPageController.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -112,11 +147,14 @@
           </provider>
         </entry>
       </file>
+=======
+>>>>>>> origin/master
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Arquillian JUnit Test Class" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -124,7 +162,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>show</find>
       <find>/sele</find>
       <find>?name</find>
       <find>Book Now</find>
@@ -141,6 +178,10 @@
       <find>theaterList</find>
       <find>MovieforDisplay</find>
       <find>forDisplay</find>
+      <find>location</find>
+      <find>show_id</find>
+      <find>show</find>
+      <find>theater</find>
     </findStrings>
     <replaceStrings>
       <replace>/images</replace>
@@ -157,9 +198,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev-yang" />
+        <entry key="$PROJECT_DIR$" value="LCK" />
       </map>
     </option>
+    <push-targets>
+      <push-target-info target-remote="origin" target-branch="LCK" repo="$PROJECT_DIR$" source="LCK2" />
+    </push-targets>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -169,14 +213,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/main/java/com/movietime/controller/LoginPageController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/movietime/POJOsforThymeleafRender/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/movietime/POJOsforThymeleafRender/Theater.java" />
+=======
+>>>>>>> origin/master
         <option value="$PROJECT_DIR$/src/main/java/com/movietime/POJOsforThymeleafRender/Movie.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/movietime/POJOsforThymeleafRender/MovieforDisplay.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/movietime/POJOsforThymeleafRender/TheaterForDisplay.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/movietime/POJOsforThymeleafRender/Converter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/movietime/entity/Theater.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/main/java/com/movietime/controller/RegisterPageController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/movietime/POJOsforThymeleafRender/BannerforDisplay.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/movietime/Service/InTheaterMovieServiceImp.java" />
@@ -185,8 +233,25 @@
         <option value="$PROJECT_DIR$/src/main/java/com/movietime/entity/Chair.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/homepage.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/movietime/Service/MovieService.java" />
+=======
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/POJOsforThymeleafRender/BannerforDisplay.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/Service/InTheaterMovieServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/Service/InTheaterMovieService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/entity/Chair.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/homepage.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/VO/ShowForDisplay.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/Utils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/Utils/Validator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/Service/UserServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/selectShow.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/VO/ScheduleForDisplay.java" />
+>>>>>>> origin/master
         <option value="$PROJECT_DIR$/src/main/java/com/movietime/Service/MovieServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/DAO/SeatDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/entity/Movie.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/entity/Seat.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/movietime/VO/Converter.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/main/java/com/movietime/dao/MovieDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/movietime/dao/MovieDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/movietime/dao/MovieDaoImpl.java" />
@@ -220,6 +285,38 @@
         <option value="$PROJECT_DIR$/src/main/java/com/movietime/service/MovieServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/movietime/service/TagService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/movietime/service/ShowService.java" />
+=======
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/VO/BannerforDisplay.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/DAO/MovieDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/DAO/TestImpl/SeatDAOTestImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/DAO/TestImpl/MovieDAOTestImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/Service/ShowService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/movietime/DAO/TestImpl/UserDAOTestImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/entity/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/Service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/Service/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/entity/Tag.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/Service/MovieService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/Service/TagService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/Service/MovieServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/DAO/TagDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/controller/SelectShowPageController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/controller/LoginPageController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/controller/HomePageController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/controller/RegisterPageController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/controller/SelectSeatPageController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/controller/PaymentPageController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/DAO/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/DAO/TestImpl/UserDAOTestImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/DAO/TestImpl/TagDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/Service/TagServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/Service/SeatService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/Service/SeatServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/entity/Show.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/Service/ShowServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/DAO/TestImpl/ShowDAOTestImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/movietime/DAO/ShowDAO.java" />
+>>>>>>> origin/master
       </list>
     </option>
   </component>
@@ -242,6 +339,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -256,6 +354,12 @@
     <OptionsSetting value="true" id="Edit" />
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
+=======
+    <option name="x" value="67" />
+    <option name="y" value="-8" />
+    <option name="width" value="1307" />
+    <option name="height" value="784" />
+>>>>>>> origin/master
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -272,7 +376,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Scratches" />
+=======
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+>>>>>>> origin/master
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -301,6 +410,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -448,6 +558,9 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="service" />
+=======
+              <option name="myItemId" value=".idea" />
+>>>>>>> origin/master
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -461,22 +574,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value=".idea" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="movietime" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
+<<<<<<< HEAD
               <option name="myItemId" value="entity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -538,13 +640,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
+=======
+              <option name="myItemId" value="UML" />
+>>>>>>> origin/master
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="Scope" />
       <pane id="PackagesPane" />
+=======
+      <pane id="Scratches" />
+>>>>>>> origin/master
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -556,11 +665,31 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
+<<<<<<< HEAD
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+=======
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
+    <property name="ChangesBrowser.SHOW_FLATTEN" value="true" />
+>>>>>>> origin/master
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.movietime.DAO.TestImpl" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.movietime.POJOsforThymeleafRender" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\MovieTime\MovieTime\.idea\UML" />
+      <recent name="G:\MovieTime\MovieTime\src\main\resources\image" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\MovieTime\MovieTime\src\main\resources" />
+      <recent name="G:\MovieTime\MovieTime\src\main\webapp\WEB-INF\templates\images" />
+      <recent name="G:\MovieTime\MovieTime\src\main\resources\image" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -626,6 +755,7 @@
       <option name="PREFERRED_AVD" value="" />
       <Java />
       <Profilers>
+<<<<<<< HEAD
         <option name="GAPID_DISABLE_PCS" value="false" />
       </Profilers>
       <method />
@@ -710,21 +840,30 @@
       <envs />
       <properties />
       <listeners />
+=======
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+>>>>>>> origin/master
       <method />
     </configuration>
-    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
       <method />
     </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+    <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="myFilePath" />
-      <option name="GLUE" />
-      <option name="myNameFilter" />
-      <option name="myGeneratedName" />
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -732,55 +871,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
-      <option name="BCName" value="" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="" />
-      <option name="overriddenMainClass" value="" />
-      <option name="overriddenOutputFileName" value="" />
-      <option name="overrideMainClass" value="false" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
-      <option name="BCName" value="" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="moduleName" value="" />
-      <option name="trusted" value="true" />
       <method />
     </configuration>
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
@@ -799,6 +889,7 @@
       </ExternalSystemSettings>
       <method />
     </configuration>
+<<<<<<< HEAD
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
       <setting name="vmparams" value="" />
       <setting name="cmdLine" value="run-app" />
@@ -808,6 +899,8 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
+=======
+>>>>>>> origin/master
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -871,9 +964,12 @@
       <envs />
       <method />
     </configuration>
+<<<<<<< HEAD
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
+=======
+>>>>>>> origin/master
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -929,12 +1025,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -963,6 +1053,7 @@
       <listeners />
       <method />
     </configuration>
+<<<<<<< HEAD
     <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -1013,6 +1104,8 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
+=======
+>>>>>>> origin/master
     <configuration default="false" name="clean" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -1112,6 +1205,7 @@
       <workItem from="1495693351572" duration="557000" />
       <workItem from="1496559457773" duration="4371000" />
       <workItem from="1496662952381" duration="25386000" />
+<<<<<<< HEAD
       <workItem from="1496757488979" duration="6000" />
       <workItem from="1496757503973" duration="110000" />
       <workItem from="1496757675320" duration="11000" />
@@ -1152,6 +1246,12 @@
       <workItem from="1496908483716" duration="196000" />
       <workItem from="1496908727345" duration="1660000" />
       <workItem from="1496914356804" duration="510000" />
+=======
+      <workItem from="1496814470355" duration="520000" />
+      <workItem from="1496815040514" duration="6351000" />
+      <workItem from="1496821913162" duration="45000" />
+      <workItem from="1496822148713" duration="1581000" />
+>>>>>>> origin/master
     </task>
     <task id="LOCAL-00001" summary="重构&#10;1. 重构Controller&#10;2. 重新设计URL&#10;3. 补充一些图片">
       <created>1496681550859</created>
@@ -1202,10 +1302,74 @@
       <option name="project" value="LOCAL" />
       <updated>1496754938917</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="BUG FIX">
+      <created>1496755312354</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1496755312355</updated>
+    </task>
+    <task id="LOCAL-00009" summary="BUG FIX">
+      <created>1496758670740</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1496758670740</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Register Controller">
+      <created>1496761054588</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1496761054588</updated>
+    </task>
+    <task id="LOCAL-00011" summary="重构控制器">
+      <created>1496763548517</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1496763548517</updated>
+    </task>
+    <task id="LOCAL-00012" summary="重构控制器">
+      <created>1496816369777</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1496816369777</updated>
+    </task>
+    <task id="LOCAL-00013" summary="BUG FIX">
+      <created>1496816601119</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1496816601119</updated>
+    </task>
+    <task id="LOCAL-00014" summary="BUG FIX">
+      <created>1496817104487</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1496817104487</updated>
+    </task>
+    <task id="LOCAL-00015" summary="BUG FIX">
+      <created>1496822212532</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1496822212532</updated>
+    </task>
+    <task id="LOCAL-00016" summary="BUG FIX">
+      <created>1496898014326</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1496898014326</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="77782000" />
   </component>
   <component name="ToolWindowManager">
@@ -1233,6 +1397,49 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+=======
+    <option name="totallyTimeSpent" value="58800000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="-8" width="1307" height="784" extended-state="6" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21991085" sideWeight="0.50271106" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21991085" sideWeight="0.4972889" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3268945" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24864446" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32868218" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> origin/master
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1265,6 +1472,8 @@
     <MESSAGE value="重构&#10;1. 重构Controller&#10;2. 重新设计URL&#10;3. 补充一些图片" />
     <MESSAGE value="补充图片" />
     <MESSAGE value="第二轮重构&#10;&#10;1. HomeController现在以面向DAO接口的方式获取数据&#10;2. 增加了会话管理，相关代码目前在LoginController和HomeController中" />
+    <MESSAGE value="Register Controller" />
+    <MESSAGE value="重构控制器" />
     <MESSAGE value="BUG FIX" />
     <option name="LAST_COMMIT_MESSAGE" value="BUG FIX" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1272,7 +1481,9 @@
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1280,6 +1491,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/entity/Theater.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/Service/ImageService.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/mybatis-config.xml" />
@@ -1444,17 +1656,161 @@
         <state relative-caret-position="221">
           <caret line="21" column="66" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
           <folding />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/VO/MovieforDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/thymeleaf/thymeleaf/3.0.2.RELEASE/thymeleaf-3.0.2.RELEASE.jar!/org/thymeleaf/templateparser/markup/AbstractMarkupTemplateParser.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-959">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/Utils.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/Utils/Validator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/selectShow.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="68" column="98" lean-forward="false" selection-start-line="68" selection-start-column="98" selection-end-line="68" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/VO/ScheduleForDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/VO/Converter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/movietime/DAO/TestImpl/UserDAOTestImplTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/entity/Tag.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/DAO/SeatDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="32" lean-forward="false" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/DAO/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="39" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/DAO/TagDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/controller/HomePageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="66" column="60" lean-forward="false" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/Service/SeatService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/Service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="33" column="20" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/Service/TagServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="26" column="46" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/DAO/ShowDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/entity/Movie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/Service/ShowService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/Service/ShowServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="30" column="57" lean-forward="false" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/VO/BannerforDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+>>>>>>> origin/master
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/controller/LoginPageController.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="289">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+=======
+        <state relative-caret-position="190">
+          <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+>>>>>>> origin/master
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/controller/HomePageController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="317">
@@ -1508,34 +1864,172 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/Service/TagService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="10" column="42" lean-forward="false" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/entity/Show.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/selectSeat.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1843">
+          <caret line="97" column="41" lean-forward="false" selection-start-line="97" selection-start-column="41" selection-end-line="97" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/controller/SelectSeatPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="41" column="36" lean-forward="false" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/controller/RegisterPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="26" column="17" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#708#709#0" expanded="false" />
+            <element signature="e#741#742#0" expanded="false" />
+            <marker date="1496824433163" expanded="true" signature="1542:1549" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/controller/PaymentPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="23" column="53" lean-forward="false" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/images/Lord of the rings.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/entity/Seat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="32" lean-forward="false" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/controller/LoginPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="34" column="64" lean-forward="false" selection-start-line="34" selection-start-column="64" selection-end-line="34" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/controller/SelectShowPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="42" column="26" lean-forward="false" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/DAO/MovieDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+>>>>>>> origin/master
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/dao/TagDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/DAO/TestImpl/SeatDAOTestImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+>>>>>>> origin/master
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/service/TagService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/DAO/TestImpl/ShowDAOTestImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="48" column="23" lean-forward="false" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/DAO/TestImpl/TagDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/DAO/TestImpl/UserDAOTestImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="e#306#307#0" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/DAO/TestImpl/MovieDAOTestImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+>>>>>>> origin/master
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/service/TagServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/Service/MovieServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/Service/MovieService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+>>>>>>> origin/master
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1548,6 +2042,63 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/images/Lord of the ringsB.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/images/Pirates of the Caribbean.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/images/The Matrix.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/images/The MatrixB.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/images/The HobbitB.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/images/The Hobbit.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/images/Chibi.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/movietime/Service/SeatServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="30" column="29" lean-forward="false" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/UML/MovieTimeDeploy.uxf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> origin/master
           <folding />
         </state>
       </provider>

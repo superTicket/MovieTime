@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * Created by yangzy on 2017/6/7.
@@ -60,6 +61,7 @@ public class SeatServiceImpl implements SeatService {
     public boolean book(Seat seat) {
         List<Seat> seatList = new LinkedList<Seat>();
         seatList.add(seat);
+        ReentrantLock reentrantLock = new ReentrantLock(false);
         return book(seatList);
     }
 

@@ -11,6 +11,4 @@ public interface MovieDAO {
     Movie findOne(long id);
 
     List<Movie> findAll();
-
-    List<Movie> findMovieByTag(String tag);
 }

@@ -57,7 +57,8 @@
 				<div class="item" th:each="banner, iterStat : ${bannerList}" th:classappend="${iterStat.first} ? active">
 					<img th:src="@{${banner.path}}" th:alt="${iterStat.index} + ' ' + slide"/>
 					<div class="button">
-						<a th:name="${banner.name}" th:href="'/selectShow?movieName=' + ${banner.name}" class="hvr-shutter-out-horizontal">Buy Ticket</a>
+						<a th:name="${banner.name}" th:href="'/selectShow?movie_id=' + ${banner.id}"
+						   class="hvr-shutter-out-horizontal">Buy Ticket</a>
 					</div>
 				</div>
 			</div>

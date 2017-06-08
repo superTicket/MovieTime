@@ -1,7 +1,6 @@
 package com.movietime.entity;
 
 import java.io.Serializable;
-import java.util.Random;
 
 public class User implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -11,18 +10,6 @@ public class User implements Serializable {
     private String firstName;
     private String lastName;
     private String password;
-
-    public User() {
-        this.id = new Random().nextInt();
-        this.email = "Alice";
-        this.iconPath = "/images/user_icon/p1.png";
-    }
-
-    public User(String email, String iconPath) {
-        this.id = new Random().nextInt();
-        this.email = email;
-        this.iconPath = iconPath;
-    }
 
     public long getId() {
         return id;

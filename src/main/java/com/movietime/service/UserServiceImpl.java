@@ -19,8 +19,14 @@ public class UserServiceImpl implements UserService {
         return user.getPassword().equals(password_input);
     }
 
-    public boolean registerUser(String username, String password, String first_name, String last_name) {
-        return userDao.InsertOne(username, password, first_name, last_name);
+    public void registerUser(String username, String password, String firstName, String lastName) {
+        User user = new User();
+        user.setEmail(username);
+        user.setPassword(password);
+        user.setFirstName(firstName);
+        user.setLastName(lastName);
+        user.setIconPath("/images/user_icon/p1.png");
+        userDao.create(user);
     }
 
     public User getUserInstance(String username, String password) {

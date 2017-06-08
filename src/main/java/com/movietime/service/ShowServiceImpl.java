@@ -24,7 +24,7 @@ public class ShowServiceImpl implements ShowService {
         return showDao.findByMovie(movieId);
     }
 
-    public Show findShowByTheaterIdAndTime(long theaterId, String time) {
+    public Show findByTheaterIdAndTime(long theaterId, String time) {
         List<Show> showList = showDao.findByTheaterId(theaterId);
         if (showList == null) return null;
         for (int i = 0; i < showList.size(); i++) {

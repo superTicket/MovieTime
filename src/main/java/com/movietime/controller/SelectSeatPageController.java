@@ -35,7 +35,7 @@ public class SelectSeatPageController {
         System.out.println(selectedList_JSON);
         JSONArray jsonArray = JSONArray.fromObject(selectedList_JSON);
         List<Seat> seatList = new LinkedList<Seat>();
-        Show show = ss.findShowByTheaterIdAndTime(theater_id, show_time);
+        Show show = ss.findByTheaterIdAndTime(theater_id, show_time);
         for (int i = 0; i < jsonArray.size(); i++) {
             JSONObject jsonObject = JSONObject.fromObject(jsonArray.get(i));
             Seat seat = new Seat();
@@ -57,7 +57,7 @@ public class SelectSeatPageController {
         System.out.println("GET@'/selectSeat': theaterId='" + theater_id + "', show='" + show_name + "'");
 
         Movie movie = ms.findOne(movie_id);
-        Show show = ss.findShowByTheaterIdAndTime(theater_id, show_name);
+        Show show = ss.findByTheaterIdAndTime(theater_id, show_name);
         // 检查参数正确性
         if (movie == null || show == null)
             return "redirect:/";
@@ -73,8 +73,8 @@ public class SelectSeatPageController {
         model.addAttribute("movie_name", movie.getName());
         model.addAttribute("show_time", show.getTime());
         model.addAttribute("price", show.getPrice());
-        model.addAttribute("seat_map", ses.getSeatMapByShowId(show.getId()));
-        model.addAttribute("sold_seat", ses.getSoldSeatByShowId(show.getId()));
+        model.addAttribute("seat_map", ses.getSeatMap(show.getId()));
+        model.addAttribute("sold_seat", ses.getSoldSeat(show.getId()));
 
         return "selectSeat";
     }

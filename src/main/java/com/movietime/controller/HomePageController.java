@@ -64,7 +64,7 @@ public class HomePageController {
             panelList[i].name = tag;
             if (i == 0) panelList[i].active = true;
             // 将与该panel相关的电影注入模型
-            List<Movie> relevantMovieList = ts.getMovieByTag(tag);
+            List<Movie> relevantMovieList = ms.findByTagName(tag);
             List<Movie> noPosterList = new LinkedList<Movie>(); // 排除没有poster的电影
             for (Movie movie : relevantMovieList) {
                 if (movie.getPosterPath() == null)

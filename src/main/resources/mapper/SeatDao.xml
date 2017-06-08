@@ -4,13 +4,29 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.movietime.dao.SeatDao">
-    <select id="findByShowId" resultType="Seat">
-        SELECT * FROM seat
-        WHERE show_id = #{showId1}
+    <update id="update">
+        UPDATE seat
+        <set>
+            <!--<if test="showId != null">show_id = #{showId},</if>-->
+            <!--<if test="row != null">row = #{row},</if>-->
+            <!--<if test="col != null">col = #{col},</if>-->
+            <if test="isBooked != null">is_booked = #{isBooked}</if>
+        </set>
+        WHERE show_id = #{showId} AND row = #{row} AND col = #{col}
+    </update>
+
+    <select id="occupied" resultType="boolean">
+        SELECT is_booked FROM seat
+        WHERE show_id = #{showId} AND row = #{row} AND col = #{col} FOR UPDATE
     </select>
 
-    <select id="findByShowIdAndLoc" resultType="Seat">
+    <select id="findAllBooked" resultType="Seat">
         SELECT * FROM seat
-        WHERE show_id = #{showId2} AND row = #{row} AND col = #{col}
+        WHERE show_id = #{id} AND is_booked = true
     </select>
+
+    <!--<select id="findByShowId" resultType="Seat">-->
+        <!--SELECT * FROM seat-->
+        <!--WHERE show_id = #{showId1}-->
+    <!--</select>-->
 </mapper>

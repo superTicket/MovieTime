@@ -1,15 +1,17 @@
-package com.movietime.entity;
+package com.movietime.vo;
 
-import java.io.Serializable;
-
-public class Show implements Serializable {
+/**
+ * Created by yangzy on 2017/6/9.
+ */
+public class ShowVO {
     private static final long serialVersionUID = 1L;
     private long id;
     private String theaterName;
     private String time;
     private int price;
     private long movieId;
-    private String seatMap;
+    private String[] seatMap;
+    private String[] soldSeat;
 
     public long getId() {
         return id;
@@ -51,11 +53,19 @@ public class Show implements Serializable {
         this.movieId = movieId;
     }
 
-    public String getSeatMap() {
+    public String[] getSeatMap() {
         return seatMap;
     }
 
-    public void setSeatMap(String seatMap) {
+    public void setSeatMap(String[] seatMap) {
         this.seatMap = seatMap;
+    }
+
+    public String[] getSoldSeat() {
+        return soldSeat;
+    }
+
+    public void setSoldSeat(String[] soldSeat) {
+        this.soldSeat = soldSeat;
     }
 }

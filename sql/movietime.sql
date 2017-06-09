@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50716
 File Encoding         : 65001
 
-Date: 2017-06-09 09:38:45
+Date: 2017-06-09 10:28:52
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -36,16 +36,16 @@ CREATE TABLE `movie` (
 -- ----------------------------
 -- Records of movie
 -- ----------------------------
-INSERT INTO `movie` VALUES ('1', 'The Matrix', '/images/The Matrix', '/images/The MatrixB', '1995-01-01', '3 hour', 'Apple', 'English', 'SciFic', 'StarA');
-INSERT INTO `movie` VALUES ('2', '\r\n\r\nThe Hobbit', '/images/The Hobbit', '/images/The HobbitB', '2006-05-01', '4 hour', 'SonPie', 'English', 'Fantasy', 'StarHB');
-INSERT INTO `movie` VALUES ('3', '\r\n\r\nLord of the rings', '/images/Lord of the rings', '/images/Lord of the ringsB', '2001-01-17', '4 hour', 'Pie', 'English', 'Fantasy', 'StarH');
-INSERT INTO `movie` VALUES ('4', 'Pirates of the Caribbean', '/images/Pirates of the Caribbean', null, '1996-01-01', '3 hour', 'Banana', 'English', 'Fantasy', 'StarS');
-INSERT INTO `movie` VALUES ('5', 'Doraemon', '/images/Doraemon', null, '2013-06-12', '2 hour', 'Oda', 'Japanese', 'Comic', 'StarJP');
-INSERT INTO `movie` VALUES ('6', 'Chibi', '/images/Chibi', null, '2008-08-08', '2 hour', 'Chi', 'Chinese', 'History', 'StarCH');
-INSERT INTO `movie` VALUES ('7', 'Kingsman', '/images/Kingsman', null, '2009-09-03', '3 hour', 'Eg', 'English', 'Action', 'StarEg');
-INSERT INTO `movie` VALUES ('8', 'High School Musical', '/images/High School Musical', null, '2010-05-02', '3 hour', 'Am', 'English', 'Music', 'StarStu');
-INSERT INTO `movie` VALUES ('9', 'Conan', '/images/Conan', null, '2017-07-07', '2 hour', 'AoYama', 'Japanese', 'Comic', 'Conan');
-INSERT INTO `movie` VALUES ('10', 'Dead Game', '/images/Dead Game', null, '1977-07-05', '2 hour', 'Buruse Li', 'English', 'Action', 'Buruse Li');
+INSERT INTO `movie` VALUES ('1', 'The Matrix', '/images/The Matrix.jpg', '/images/The MatrixB.jpg', '1995-01-01', '3 hour', 'Apple', 'English', 'SciFic', 'StarA');
+INSERT INTO `movie` VALUES ('2', 'The Hobbit', '/images/The Hobbit.jpg', '/images/The HobbitB.jpg', '2006-05-01', '4 hour', 'SonPie', 'English', 'Fantasy', 'StarHB');
+INSERT INTO `movie` VALUES ('3', 'Lord of the rings', '/images/Lord of the rings.jpg', '/images/Lord of the ringsB.jpg', '2001-01-17', '4 hour', 'Pie', 'English', 'Fantasy', 'StarH');
+INSERT INTO `movie` VALUES ('4', 'Pirates of the Caribbean', '/images/Pirates of the Caribbean.jpg', null, '1996-01-01', '3 hour', 'Banana', 'English', 'Fantasy', 'StarS');
+INSERT INTO `movie` VALUES ('5', 'Doraemon', '/images/Doraemon.jpg', null, '2013-06-12', '2 hour', 'Oda', 'Japanese', 'Comic', 'StarJP');
+INSERT INTO `movie` VALUES ('6', 'Chibi', '/images/Chibi'.jpg, null, '2008-08-08', '2 hour', 'Chi', 'Chinese', 'History', 'StarCH');
+INSERT INTO `movie` VALUES ('7', 'Kingsman', '/images/Kingsman.jpg', null, '2009-09-03', '3 hour', 'Eg', 'English', 'Action', 'StarEg');
+INSERT INTO `movie` VALUES ('8', 'High School Musical', '/images/High School Musical.jpg', null, '2010-05-02', '3 hour', 'Am', 'English', 'Music', 'StarStu');
+INSERT INTO `movie` VALUES ('9', 'Conan', '/images/Conan.jpg', null, '2017-07-07', '2 hour', 'AoYama', 'Japanese', 'Comic', 'Conan');
+INSERT INTO `movie` VALUES ('10', 'Dead Game', '/images/Dead Game.jpg', null, '1977-07-05', '2 hour', 'Buruse Li', 'English', 'Action', 'Buruse Li');
 
 -- ----------------------------
 -- Table structure for seat
@@ -1042,17 +1042,17 @@ CREATE TABLE `show` (
 -- ----------------------------
 INSERT INTO `show` VALUES ('1', 'ABC', '10:30', '130', '1', 'aaaaaaaa|aaaaaaaa|________|aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|aaaaaaaa|');
 INSERT INTO `show` VALUES ('2', 'ABC', '14:30', '100', '1', 'aaaaaaaa|aaaaaaaa|________|aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|aaaaaaaa|');
-INSERT INTO `show` VALUES ('3', 'UKnow', '10:00', '20', '1', '\r\naaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|');
-INSERT INTO `show` VALUES ('4', 'UKnow', '14:00', '15', '2', '\r\naaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|');
-INSERT INTO `show` VALUES ('5', 'UKnow', '20:00', '30', '3', '\r\naaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|');
-INSERT INTO `show` VALUES ('6', 'UKnow', '22:00', '20', '4', '\r\naaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|');
+INSERT INTO `show` VALUES ('3', 'UKnow', '10:00', '20', '1', 'aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|');
+INSERT INTO `show` VALUES ('4', 'UKnow', '14:00', '15', '2', 'aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|');
+INSERT INTO `show` VALUES ('5', 'UKnow', '20:00', '30', '3', 'aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|');
+INSERT INTO `show` VALUES ('6', 'UKnow', '22:00', '20', '4', 'aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|');
 INSERT INTO `show` VALUES ('7', 'EyeBrand', '10:20', '70', '2', 'aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|');
 INSERT INTO `show` VALUES ('8', 'EyeBrand', '15:00', '70', '5', 'aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|');
 INSERT INTO `show` VALUES ('9', 'EyeBrand', '20:00', '70', '6', 'aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|');
-INSERT INTO `show` VALUES ('10', 'BigFeel', '08:00', '35', '4', '\r\n\r\naa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|');
-INSERT INTO `show` VALUES ('11', 'BigFeel', '10:00', '42', '6', '\r\n\r\naa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|');
-INSERT INTO `show` VALUES ('12', 'BigFeel', '14:00', '30', '8', '\r\n\r\naa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|');
-INSERT INTO `show` VALUES ('13', 'BigFeel', '16:00', '20', '10', '\r\n\r\naa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|');
+INSERT INTO `show` VALUES ('10', 'BigFeel', '08:00', '35', '4', 'aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|');
+INSERT INTO `show` VALUES ('11', 'BigFeel', '10:00', '42', '6', 'aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|');
+INSERT INTO `show` VALUES ('12', 'BigFeel', '14:00', '30', '8', 'aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|');
+INSERT INTO `show` VALUES ('13', 'BigFeel', '16:00', '20', '10', 'aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|');
 INSERT INTO `show` VALUES ('14', 'Happy', '09:30', '50', '9', 'aaaaaaaa|_aaaaaa_|_aaaaaa_|_aaaaaa_|_aaaaaa_|aaaaaaaa|_aaaaaa_|aaaaaaaa|');
 INSERT INTO `show` VALUES ('15', 'Happy', '19:30', '50', '7', 'aaaaaaaa|_aaaaaa_|_aaaaaa_|_aaaaaa_|_aaaaaa_|aaaaaaaa|_aaaaaa_|aaaaaaaa|');
 
@@ -1069,10 +1069,10 @@ CREATE TABLE `tag` (
 -- ----------------------------
 -- Records of tag
 -- ----------------------------
-INSERT INTO `tag` VALUES ('1', 'featured');
-INSERT INTO `tag` VALUES ('2', 'top_viewed');
-INSERT INTO `tag` VALUES ('3', 'top_rating');
-INSERT INTO `tag` VALUES ('4', 'recently_added');
+INSERT INTO `tag` VALUES ('1', 'Featured');
+INSERT INTO `tag` VALUES ('2', 'Top Viewed');
+INSERT INTO `tag` VALUES ('3', 'Top Rating');
+INSERT INTO `tag` VALUES ('4', 'Recently Added');
 
 -- ----------------------------
 -- Table structure for tag_movie

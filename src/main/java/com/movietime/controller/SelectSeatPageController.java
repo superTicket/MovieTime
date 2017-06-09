@@ -1,12 +1,12 @@
 package com.movietime.controller;
 
-import com.movietime.service.MovieService;
-import com.movietime.service.SeatService;
-import com.movietime.service.ShowService;
 import com.movietime.entity.Movie;
 import com.movietime.entity.Seat;
 import com.movietime.entity.Show;
 import com.movietime.entity.User;
+import com.movietime.service.MovieService;
+import com.movietime.service.SeatService;
+import com.movietime.service.ShowService;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,12 +30,12 @@ public class SelectSeatPageController {
 
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
-    public String post_selectSeat(int theater_id, String show_time, String selectedList_JSON, Model model) {
-        System.out.println("POST@'/selectSeat': theaterId=" + theater_id + ", show_time=" + show_time + ", selectedList_JSON=");
+    public String post_selectSeat(int show_id, String selectedList_JSON, Model model) {
+        System.out.println("POST@'/selectSeat': show_id=" + show_id + ", selectedList_JSON=");
         System.out.println(selectedList_JSON);
         JSONArray jsonArray = JSONArray.fromObject(selectedList_JSON);
         List<Seat> seatList = new LinkedList<Seat>();
-        Show show = ss.findByTheaterIdAndTime(theater_id, show_time);
+        Show show = ss.findOne(show_id);
         for (int i = 0; i < jsonArray.size(); i++) {
             JSONObject jsonObject = JSONObject.fromObject(jsonArray.get(i));
             Seat seat = new Seat();
@@ -50,14 +50,14 @@ public class SelectSeatPageController {
 
     @RequestMapping(method = RequestMethod.GET)
     public String get_selectSeat(@PathVariable("cinema_id") int theater_id,
-                                 @RequestParam("movieId") int movie_id,
-                                 @RequestParam("show") String show_name,
+                                 @RequestParam("movie_id") int movie_id,
+                                 @RequestParam("show_id") int show_id,
                                  Model model,
                                  HttpSession session) {
-        System.out.println("GET@'/selectSeat': theaterId='" + theater_id + "', show='" + show_name + "'");
+        System.out.println("GET@'/selectSeat': theater_id='" + theater_id + "', show_id='" + show_id + "'");
 
         Movie movie = ms.findOne(movie_id);
-        Show show = ss.findByTheaterIdAndTime(theater_id, show_name);
+        Show show = ss.findOne(show_id);
         // 检查参数正确性
         if (movie == null || show == null)
             return "redirect:/";
@@ -72,6 +72,7 @@ public class SelectSeatPageController {
         // 电影&场次信息
         model.addAttribute("movie_name", movie.getName());
         model.addAttribute("show_time", show.getTime());
+        model.addAttribute("show_id", show.getId());
         model.addAttribute("price", show.getPrice());
         model.addAttribute("seat_map", ses.getSeatMap(show.getId()));
         model.addAttribute("sold_seat", ses.getSoldSeat(show.getId()));

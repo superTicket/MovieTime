@@ -7,7 +7,7 @@ public class Seat implements Serializable {
     private long showId;
     private int row;
     private int col;
-    private boolean booked;
+    private boolean isBooked;
 
     public long getShowId() {
         return showId;
@@ -34,10 +34,10 @@ public class Seat implements Serializable {
     }
 
     public boolean isBooked() {
-        return booked;
+        return isBooked;
     }
 
     public void setBooked(boolean booked) {
-        this.booked = booked;
+        isBooked = booked;
     }
 }

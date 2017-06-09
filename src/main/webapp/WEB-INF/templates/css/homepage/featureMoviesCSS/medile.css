@@ -118,6 +118,7 @@ ul#myTab {
 }
 .w3l-movie-gride-agile{
     position:relative;
+    display: inline-block;
 }
 .w3l-action-icon{
     display:none;
@@ -205,13 +206,17 @@ ul.w3l-ratings li i ,.w3l-ratings a i{
 }
 /*---browse-grid-----*/
 .w3l-movie-gride-agile {
+    display: inline-block;
+    height: 18%;
+    width: 18%;
     text-align: center;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.35);
-    margin-right: 0%;
+    margin-right: 1%;
     margin-bottom:3%;
     position: relative;
     padding-left: 0;
 }
+
 .w3l-movie-gride-agile:nth-child(6),.w3l-movie-gride-agile:nth-child(12) {
     margin-left: 0%;
 }

@@ -1,7 +1,9 @@
-package com.movietime.vo;
+package com.movietime.util;
 
 import com.movietime.entity.Movie;
 import com.movietime.entity.Show;
+import com.movietime.vo.MovieVO;
+import com.movietime.vo.ShowVO;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -9,16 +11,16 @@ import java.util.List;
 public class Converter {
     public static MovieVO convert(Movie movie) {
         MovieVO movieVO = new MovieVO();
-        movieVO.bannerPath = movie.getBannerPath();
-        movieVO.castAndCrew = movie.getCastAndCrew();
-        movieVO.director = movie.getDirector();
-        movieVO.duration = movie.getDuration();
-        movieVO.genre = movie.getGenre();
-        movieVO.id = (int) movie.getId();
-        movieVO.language = movie.getLanguage();
-        movieVO.name = movie.getName();
-        movieVO.posterPath = movie.getPosterPath();
-        movieVO.releaseDate = movie.getReleaseDate();
+        movieVO.setBannerPath(movie.getBannerPath());
+        movieVO.setCastAndCrew(movie.getCastAndCrew());
+        movieVO.setDirector(movie.getDirector());
+        movieVO.setDuration(movie.getDuration());
+        movieVO.setGenre(movie.getGenre());
+        movieVO.setId((int) movie.getId());
+        movieVO.setLanguage(movie.getLanguage());
+        movieVO.setName(movie.getName());
+        movieVO.setPosterPath(movie.getPosterPath());
+        movieVO.setReleaseDate(movie.getReleaseDate());
         return movieVO;
     }
 

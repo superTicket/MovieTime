@@ -41,7 +41,7 @@ INSERT INTO `movie` VALUES ('2', 'The Hobbit', '/images/The Hobbit.jpg', '/image
 INSERT INTO `movie` VALUES ('3', 'Lord of the rings', '/images/Lord of the rings.jpg', '/images/Lord of the ringsB.jpg', '2001-01-17', '4 hour', 'Pie', 'English', 'Fantasy', 'StarH');
 INSERT INTO `movie` VALUES ('4', 'Pirates of the Caribbean', '/images/Pirates of the Caribbean.jpg', null, '1996-01-01', '3 hour', 'Banana', 'English', 'Fantasy', 'StarS');
 INSERT INTO `movie` VALUES ('5', 'Doraemon', '/images/Doraemon.jpg', null, '2013-06-12', '2 hour', 'Oda', 'Japanese', 'Comic', 'StarJP');
-INSERT INTO `movie` VALUES ('6', 'Chibi', '/images/Chibi'.jpg, null, '2008-08-08', '2 hour', 'Chi', 'Chinese', 'History', 'StarCH');
+INSERT INTO `movie` VALUES ('6', 'Chibi', '/images/Chibi.jpg', null, '2008-08-08', '2 hour', 'Chi', 'Chinese', 'History', 'StarCH');
 INSERT INTO `movie` VALUES ('7', 'Kingsman', '/images/Kingsman.jpg', null, '2009-09-03', '3 hour', 'Eg', 'English', 'Action', 'StarEg');
 INSERT INTO `movie` VALUES ('8', 'High School Musical', '/images/High School Musical.jpg', null, '2010-05-02', '3 hour', 'Am', 'English', 'Music', 'StarStu');
 INSERT INTO `movie` VALUES ('9', 'Conan', '/images/Conan.jpg', null, '2017-07-07', '2 hour', 'AoYama', 'Japanese', 'Comic', 'Conan');

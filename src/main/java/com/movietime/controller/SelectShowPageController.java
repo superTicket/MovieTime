@@ -6,7 +6,7 @@ import com.movietime.entity.User;
 import com.movietime.service.MovieService;
 import com.movietime.service.SeatService;
 import com.movietime.service.ShowService;
-import com.movietime.vo.Converter;
+import com.movietime.util.Converter;
 import com.movietime.vo.ScheduleVO;
 import com.movietime.vo.ShowVO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -68,13 +68,13 @@ public class SelectShowPageController {
         for (String theater : showsGroupByTheater.keySet()) {
             List<Show> showInThisTheaterList = showsGroupByTheater.get(theater);
             ScheduleVO schedule = new ScheduleVO();
-            schedule.name = theater;
-            schedule.location = "";
-            schedule.showList = new ShowVO[showInThisTheaterList.size()];
+            schedule.setName(theater);
+            schedule.setLocation("");
+            schedule.setShowList(new ShowVO[showInThisTheaterList.size()]);
             for (int i = 0; i < showInThisTheaterList.size(); i++) {
                 Show show = showInThisTheaterList.get(i);
-                schedule.showList[i] = Converter.convert(show);
-                schedule.showList[i].setSoldSeat(ses.getSoldSeat(show.getId()));
+                schedule.getShowList()[i] = Converter.convert(show);
+                schedule.getShowList()[i].setSoldSeat(ses.getSoldSeat(show.getId()));
             }
             scheduleList.add(schedule);
         }

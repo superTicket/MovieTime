@@ -9,5 +9,4 @@ public interface ShowService {
     public Show findOne(long showId);
     public List<Show> findAll();
     public List<Show> findByMovie(long movieId);
-    public Show findByTheaterIdAndTime(long theaterId, String name);
 }

@@ -31,6 +31,7 @@ function proceed() {
             url: window.location.href,
             method: 'POST',
             data: {
+                show_id: show_id,
                 selectedList_JSON: JSON.stringify(selectedList)
             },
             success: function (data) {

@@ -1,12 +1,14 @@
 package com.movietime.controller;
 
-import com.movietime.service.MovieService;
-import com.movietime.service.ShowService;
-import com.movietime.vo.Converter;
-import com.movietime.vo.ScheduleVO;
 import com.movietime.entity.Movie;
 import com.movietime.entity.Show;
 import com.movietime.entity.User;
+import com.movietime.service.MovieService;
+import com.movietime.service.SeatService;
+import com.movietime.service.ShowService;
+import com.movietime.vo.Converter;
+import com.movietime.vo.ScheduleVO;
+import com.movietime.vo.ShowVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -25,15 +27,16 @@ import java.util.Map;
 public class SelectShowPageController {
     @Autowired
     MovieService ms;
-
     @Autowired
     ShowService ss;
+    @Autowired
+    SeatService ses;
 
     @RequestMapping(method = RequestMethod.GET)
-    public String get_selectShow(@RequestParam("movieId") int movie_id,
+    public String get_selectShow(@RequestParam("movie_id") int movie_id,
                                  Model model,
                                  HttpSession session) {
-        System.out.println("GET@'/selectShow': movieId='" + movie_id + "'");
+        System.out.println("GET@'/selectShow': movie_id='" + movie_id + "'");
 
         Movie movie = ms.findOne(movie_id);
         // 检查参数正确性
@@ -67,9 +70,12 @@ public class SelectShowPageController {
             ScheduleVO schedule = new ScheduleVO();
             schedule.name = theater;
             schedule.location = "";
-            schedule.showList = new String[showInThisTheaterList.size()];
-            for (int i = 0; i < showInThisTheaterList.size(); i++)
-                schedule.showList[i] = showInThisTheaterList.get(i).getTime();
+            schedule.showList = new ShowVO[showInThisTheaterList.size()];
+            for (int i = 0; i < showInThisTheaterList.size(); i++) {
+                Show show = showInThisTheaterList.get(i);
+                schedule.showList[i] = Converter.convert(show);
+                schedule.showList[i].setSoldSeat(ses.getSoldSeat(show.getId()));
+            }
             scheduleList.add(schedule);
         }
 

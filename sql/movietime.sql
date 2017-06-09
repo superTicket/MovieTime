@@ -36,16 +36,16 @@ CREATE TABLE `movie` (
 -- ----------------------------
 -- Records of movie
 -- ----------------------------
-INSERT INTO `movie` VALUES ('1', 'The Matrix', '/images/The Matrix', '/images/The MatrixB', '1995-01-01', '3 hour', 'Apple', 'English', 'SciFic', 'StarA');
-INSERT INTO `movie` VALUES ('2', '\r\n\r\nThe Hobbit', '/images/The Hobbit', '/images/The HobbitB', '2006-05-01', '4 hour', 'SonPie', 'English', 'Fantasy', 'StarHB');
-INSERT INTO `movie` VALUES ('3', '\r\n\r\nLord of the rings', '/images/Lord of the rings', '/images/Lord of the ringsB', '2001-01-17', '4 hour', 'Pie', 'English', 'Fantasy', 'StarH');
-INSERT INTO `movie` VALUES ('4', 'Pirates of the Caribbean', '/images/Pirates of the Caribbean', null, '1996-01-01', '3 hour', 'Banana', 'English', 'Fantasy', 'StarS');
-INSERT INTO `movie` VALUES ('5', 'Doraemon', '/images/Doraemon', null, '2013-06-12', '2 hour', 'Oda', 'Japanese', 'Comic', 'StarJP');
-INSERT INTO `movie` VALUES ('6', 'Chibi', '/images/Chibi', null, '2008-08-08', '2 hour', 'Chi', 'Chinese', 'History', 'StarCH');
-INSERT INTO `movie` VALUES ('7', 'Kingsman', '/images/Kingsman', null, '2009-09-03', '3 hour', 'Eg', 'English', 'Action', 'StarEg');
-INSERT INTO `movie` VALUES ('8', 'High School Musical', '/images/High School Musical', null, '2010-05-02', '3 hour', 'Am', 'English', 'Music', 'StarStu');
-INSERT INTO `movie` VALUES ('9', 'Conan', '/images/Conan', null, '2017-07-07', '2 hour', 'AoYama', 'Japanese', 'Comic', 'Conan');
-INSERT INTO `movie` VALUES ('10', 'Dead Game', '/images/Dead Game', null, '1977-07-05', '2 hour', 'Buruse Li', 'English', 'Action', 'Buruse Li');
+INSERT INTO `movie` VALUES ('1', 'The Matrix', '/images/The Matrix.jpg', '/images/The MatrixB.jpg', '1995-01-01', '3 hour', 'Apple', 'English', 'SciFic', 'StarA');
+INSERT INTO `movie` VALUES ('2', 'The Hobbit', '/images/The Hobbit.jpg', '/images/The HobbitB.jpg', '2006-05-01', '4 hour', 'SonPie', 'English', 'Fantasy', 'StarHB');
+INSERT INTO `movie` VALUES ('3', 'Lord of the rings', '/images/Lord of the rings.jpg', '/images/Lord of the ringsB.jpg', '2001-01-17', '4 hour', 'Pie', 'English', 'Fantasy', 'StarH');
+INSERT INTO `movie` VALUES ('4', 'Pirates of the Caribbean', '/images/Pirates of the Caribbean.jpg', null, '1996-01-01', '3 hour', 'Banana', 'English', 'Fantasy', 'StarS');
+INSERT INTO `movie` VALUES ('5', 'Doraemon', '/images/Doraemon.jpg', null, '2013-06-12', '2 hour', 'Oda', 'Japanese', 'Comic', 'StarJP');
+INSERT INTO `movie` VALUES ('6', 'Chibi', '/images/Chibi'.jpg, null, '2008-08-08', '2 hour', 'Chi', 'Chinese', 'History', 'StarCH');
+INSERT INTO `movie` VALUES ('7', 'Kingsman', '/images/Kingsman.jpg', null, '2009-09-03', '3 hour', 'Eg', 'English', 'Action', 'StarEg');
+INSERT INTO `movie` VALUES ('8', 'High School Musical', '/images/High School Musical.jpg', null, '2010-05-02', '3 hour', 'Am', 'English', 'Music', 'StarStu');
+INSERT INTO `movie` VALUES ('9', 'Conan', '/images/Conan.jpg', null, '2017-07-07', '2 hour', 'AoYama', 'Japanese', 'Comic', 'Conan');
+INSERT INTO `movie` VALUES ('10', 'Dead Game', '/images/Dead Game.jpg', null, '1977-07-05', '2 hour', 'Buruse Li', 'English', 'Action', 'Buruse Li');
 
 -- ----------------------------
 -- Table structure for seat
@@ -1069,10 +1069,10 @@ CREATE TABLE `tag` (
 -- ----------------------------
 -- Records of tag
 -- ----------------------------
-INSERT INTO `tag` VALUES ('1', 'featured');
-INSERT INTO `tag` VALUES ('2', 'top_viewed');
-INSERT INTO `tag` VALUES ('3', 'top_rating');
-INSERT INTO `tag` VALUES ('4', 'recently_added');
+INSERT INTO `tag` VALUES ('1', 'Featured');
+INSERT INTO `tag` VALUES ('2', 'Top Viewed');
+INSERT INTO `tag` VALUES ('3', 'Top Rating');
+INSERT INTO `tag` VALUES ('4', 'Recently Added');
 
 -- ----------------------------
 -- Table structure for tag_movie

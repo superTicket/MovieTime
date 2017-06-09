@@ -30,7 +30,7 @@ public class SelectSeatPageController {
 
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
-    public String post_selectSeat(int show_id, String selectedList_JSON, Model model) {
+    public String post_selectSeat(int show_id, String selectedList_JSON, Model model, HttpSession session) {
         System.out.println("POST@'/selectSeat': show_id=" + show_id + ", selectedList_JSON=");
         System.out.println(selectedList_JSON);
         JSONArray jsonArray = JSONArray.fromObject(selectedList_JSON);
@@ -45,7 +45,9 @@ public class SelectSeatPageController {
             seat.setShowId(show.getId());
             seatList.add(seat);
         }
-        return ses.book(seatList) ? "succeed" : "failure";
+        if (session.getAttribute("user") == null)
+            return "LoginError";
+        return ses.book(seatList) ? "succeed" : "SeatChosenError";
     }
 
     @RequestMapping(method = RequestMethod.GET)
@@ -74,8 +76,8 @@ public class SelectSeatPageController {
         model.addAttribute("show_time", show.getTime());
         model.addAttribute("show_id", show.getId());
         model.addAttribute("price", show.getPrice());
-        model.addAttribute("seat_map", ses.getSeatMap(show.getId()));
-        model.addAttribute("sold_seat", ses.getSoldSeat(show.getId()));
+        model.addAttribute("seatMap", ses.getSeatMap(show.getId()));
+        model.addAttribute("soldSeat", ses.getSoldSeat(show.getId()));
 
         return "selectSeat";
     }

@@ -39,6 +39,14 @@ function proceed() {
                     window.location.href = '/payment'
                 }
                 else {
+                    if (data == "SeatChosenError") {
+                        $("#errorMessage").text("Some of chosen seats have been booked just now");
+                        nextURL = null;
+                    }
+                    else if (data == "LoginError") {
+                        $("#errorMessage").text("Please login before booking");
+                        nextURL = '/login';
+                    }
                     $("#seat_taken").modal('show');
                 }
             }

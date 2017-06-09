@@ -85,7 +85,7 @@
 
 				<script type="text/javascript" th:inline="javascript">
                     selectedList = []
-                    show_id = [[${show_id]]
+                    show_id = [[${show_id}]]
                     var price = [[${price}]]; //price
                     $(document).ready(function() {
                         var $cart = $('#selected-seats'), //Sitting Area
@@ -167,15 +167,19 @@
 			<section>
 				<div class="modal-body">
 					<img class="center" style="width: 30%; height: 30%;" src="/images/selectSeat/cross.png"/>
-					<h1 class="bigFont center" style="text-align: center">Some of chosen seat has just been booked</h1>
+					<h1 class="bigFont center" style="text-align: center" id="errorMessage"></h1>
 				</div>
 			</section>
 		</div>
 	</div>
 </div>
 <script>
+    nextURL = null;
     $(function () { $('#seat_taken').on('hide.bs.modal', function () {
-        window.location.reload();
+        if (nextURL == null)
+            window.location.reload();
+        else
+            window.location.href = nextURL;
     })});
     $("#seat-map").attr("aria-activedescendant", "");
 </script>

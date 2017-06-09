@@ -7,7 +7,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpSession;
 
@@ -23,16 +22,15 @@ public class RegisterPageController {
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    @ResponseBody
-    public String post_register(String first_name, String last_name, String email,
-                                boolean newsletter, String password, String confirm_password, Model model, HttpSession session) {
+    public String post_register(String firstName, String lastName, String email,
+                                boolean newsletter, String password, String confirmPassword, Model model, HttpSession session) {
         if (Validator.checkPassword(password) &&
                 Validator.checkEmail(email) &&
-                Validator.checkName(first_name) &&
-                Validator.checkName(last_name) &&
-                password.equals(confirm_password) &&
-                us.isRegistered(email)) {
-            us.registerUser(email, password, first_name, last_name);
+                Validator.checkName(firstName) &&
+                Validator.checkName(lastName) &&
+                password.equals(confirmPassword) &&
+                !us.isRegistered(email)) {
+            us.registerUser(email, password, firstName, lastName);
             session.setAttribute("user", us.getUserInstance(email, password));
             return "redirect:/";
         }

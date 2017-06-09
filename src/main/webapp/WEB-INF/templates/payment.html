@@ -190,5 +190,18 @@
 </div>
 <!--//payment success dialog-->
 
+<script>
+    $(function () {
+        $('#succeed').on('hide.bs.modal', function () {
+            window.location.href = '/';
+        })
+    });
+    $(function () {
+        $('#failure').on('hide.bs.modal', function () {
+            window.location.reload();
+        })
+    });
+</script>
+
 </body>
 </html>

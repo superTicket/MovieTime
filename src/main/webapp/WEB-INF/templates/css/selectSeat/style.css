@@ -37,12 +37,12 @@ body{
     -o-background-size: cover;
     -ms-background-size: cover;
     -moz-background-size: cover;
-	font-family: 'Open Sans', sans-serif !important;
+	font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6{
 	margin:0;	
-font-family: 'Kotta One', serif;
+font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }	
 p{
 	margin:0;

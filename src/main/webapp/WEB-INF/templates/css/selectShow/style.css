@@ -1,7 +1,7 @@
 body{
 	padding:0;
 	margin:0;
-	font-family: 'Open Sans', sans-serif;
+	font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 body a{
     transition:0.5s all;
@@ -9,7 +9,7 @@ body a{
 	-moz-transition:0.5s all;
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
-	font-family: 'Open Sans', sans-serif;
+	font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 body a:hover {
 	  color: #007DD3;
@@ -23,11 +23,11 @@ input[type="button"],input[type="submit"]{
 }
 h1,h2,h3,h4,h5,h6{
 	margin:0;	
-	font-family: 'Oxygen', sans-serif;
+	font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }	
 p{
 	margin:0;
-	font-family: 'Open Sans', sans-serif;
+	font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 ul{
 	margin:0;
@@ -41,11 +41,11 @@ label{
 	font-size: 2.5em;
 	color: #007DD3;
 	font-weight: 500;
-	font-family: 'Oxygen', sans-serif;
+	font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 .logo a {
 	text-decoration:none;
-	font-family: 'Oxygen', sans-serif;
+	font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 .main-content {
 	background: #fff;
@@ -67,7 +67,7 @@ label{
 	color: #A5A5A5;
     font-size: 0.9em;
     font-weight: 500;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 .header-top-left {
 	float:left;
@@ -101,10 +101,10 @@ button.btn.btn-primary.btn-lg {
 	border: 1px solid#aeaeae;
 	color: #4d4d4d;
 	font-size: 14px;
-	  font-family: 'Open Sans', sans-serif;
+	  font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 .form-control {
-	font-family: 'Open Sans', sans-serif;
+	font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 .modal-header h4 {
 	color: #59595b;
@@ -148,14 +148,14 @@ div#OR {
     top: 40%;
     z-index: 1;
     background: #DFDFDF;
-	    font-family: 'Open Sans', sans-serif;
+	    font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 /*-- mega-menu --*/
 .navbar-default .navbar-nav > li > a {
 	color: #fff;
     font-weight: 600;
 	font-size: 1.05em;  
-	font-family: 'Oxygen', sans-serif;
+	font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 .navbar-default {
 	border: none;
@@ -208,7 +208,7 @@ div#OR {
 }
 .btn {
   padding: 10px 20px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 h3.other-nw {
 	margin: 16px 0;
@@ -219,7 +219,7 @@ button.btn.btn-primary {
   font-weight: 500;
   border: none;
   border-radius: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 button.btn.btn-primary.btn-sm,button.btn.btn-default.btn-sm {
 	  background-color: #003b64;
@@ -235,7 +235,7 @@ button.btn.btn-primary.btn-sm,button.btn.btn-default.btn-sm {
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
 	color:#fff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 button.btn.btn-primary.btn-sm:hover,button.btn.btn-default.btn-sm:hover {
 	  color: #000;
@@ -248,7 +248,7 @@ button.btn.btn-primary.btn-sm:hover,button.btn.btn-default.btn-sm:hover {
 }
 a.btn.btn-primary {
 	background-color: #3a5795;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Calibri, Century, Georgia, 黑体, sans-serif;
     color: #fff;
 	border: none;
 }
@@ -346,7 +346,7 @@ a.btn { text-align: center; text-decoration: none;}
 	border: none;
 	width: 91%;
 	float: right;
-	font-family: 'Open Sans', sans-serif;
+	font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 .search2 .fa-search {
 	color: #000;
@@ -398,7 +398,7 @@ a.btn { text-align: center; text-decoration: none;}
   letter-spacing: 1px;
   color: #000;
     margin-top: 1em;
-	  font-family: 'Oxygen', sans-serif;
+	  font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 .list_of_movies {
 	  width: 100%;
@@ -408,7 +408,7 @@ a.btn { text-align: center; text-decoration: none;}
   font-size: 0.9em;
   margin-top: 15px;
   font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 h5.pre i.fa.fa-heart {
 	  color: #007DD3;
@@ -430,7 +430,7 @@ h5.pre{
 	font-size: 1em;
 	font-weight: 300;
 	margin-top: 2em;
-	font-family: 'Open Sans', sans-serif;
+	font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 	color: rgba(102, 102, 102, 0.4);
 }
 .nav-tabs {
@@ -454,7 +454,7 @@ span.fleft.mr20 {
   font-size: 1em;
   font-weight: 300;
   vertical-align: top;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 /******** SAP ************/
 .sap_tabs{
@@ -493,7 +493,7 @@ span.fleft.mr20 {
   text-transform: capitalize;
   font-size: 1.2em;
   font-weight: 600;
-  font-family: 'Oxygen', sans-serif;
+  font-family: Calibri, Century, Georgia, 黑体, sans-serif;
     background-color: #FCFCFC;
 }
 .resp-tab-item:hover {
@@ -687,7 +687,7 @@ ul.tab_img li.last{
     background-color: #FFFFFF;
     padding: 5px 0px 0 10px;
     display: block;
-    font-family: 'Oxygen', sans-serif;
+    font-family: Calibri, Century, Georgia, 黑体, sans-serif;
     text-decoration: none;
 }
 .ef-movie-img {
@@ -752,7 +752,7 @@ ul.tab_img li.last{
   padding: 6px 0px;
   display:block;
   text-align: center;
-    font-family: 'Oxygen', sans-serif;
+    font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 	text-decoration:none;
 }
 .f-movie-img {
@@ -867,7 +867,7 @@ ul.tab_img li.last{
 	-moz-box-shadow: 0px 0px 12px -1px rgba(215,215,215,0.44);
 	-o-box-shadow: 0px 0px 12px -1px rgba(215,215,215,0.44);
 	-ms-box-shadow: 0px 0px 12px -1px rgba(215,215,215,0.44);
-	font-family: 'Oxygen', sans-serif;
+	font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 .nbs-flexisel-item > img {
 	cursor: pointer;
@@ -897,7 +897,7 @@ ul.tab_img li.last{
 	font-weight: 600;
 	line-height:1.4em;
 	text-align:left;
-	font-family: 'Oxygen', sans-serif;
+	font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 .buy-tickets {
 	display:none;
@@ -951,7 +951,7 @@ ul.mov_list li {
 	display:inline-block;
 	font-weight:600;
 	font-size:1em;
-	  font-family: 'Oxygen', sans-serif;
+	  font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 ul.mov_list li i.fa.fa-star{
 	color:#007DD3;
@@ -964,7 +964,7 @@ ul.mov_list li a {
 	font-weight: 400;
 	font-size: 0.9em;
 	margin-left: 0.3em;
-	font-family: 'Open Sans', sans-serif;
+	font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 ul.mov_list li a:hover {
 	  color: #007DD3;
@@ -1046,7 +1046,7 @@ a.post-title {
   margin-bottom: 6px;
   display: block;
   margin-top: 15px;
-  font-family: 'Oxygen', sans-serif;
+  font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 a.post-title:hover {
 	color: #007DD3;
@@ -1059,7 +1059,7 @@ a.post-title:hover {
 	font-weight:600;
 	color: #58595b;
 	font-size: 15px;
-	  font-family: 'Oxygen', sans-serif;
+	  font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 .footer-top-strip p  span i{
 	font-weight:300;
@@ -1088,7 +1088,7 @@ a.post-title:hover {
   font-size: 1.1em;
   font-weight: 700;
   color: #000;
-  font-family: 'Oxygen', sans-serif;
+  font-family: Calibri, Century, Georgia, 黑体, sans-serif;
   margin-bottom: 0.7em;
 }
 .f-mov-list ul  {
@@ -1107,7 +1107,7 @@ a.post-title:hover {
 	font-weight: 300;
 	font-size: 0.9em;
 	margin-right: 0.7em;
-	font-family: 'Open Sans', sans-serif;
+	font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 .f-mov-list ul li a:hover {
 	color: #000;
@@ -1122,13 +1122,13 @@ a.post-title:hover {
   color: #8B8B8B;
   font-size: 1em;
   margin-top: 10px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 h5.f-head {
 	  font-size: 1.1em;
   font-weight: 600;
   color: #000;
-  font-family: 'Oxygen', sans-serif;
+  font-family: Calibri, Century, Georgia, 黑体, sans-serif;
       margin-bottom: 0.7em;
 }
 .follow-us ul {
@@ -1173,7 +1173,7 @@ ul.social-icons li i.fa:hover {
 	border: 1px solid #DEDEDE;
 	outline: none;
 	float: left;
-	font-family: 'Open Sans', sans-serif;
+	font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 	color:#D8D8D8;
 }
 .subscribe input[type="submit"] {
@@ -1183,7 +1183,7 @@ ul.social-icons li i.fa:hover {
     outline: none;
     color: #fff;
     font-size: 1.1em;
-	font-family: 'Oxygen', sans-serif;
+	font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 	text-transform:uppercase;
 	width:25%;
 }
@@ -1264,7 +1264,7 @@ ul.social-icons li i.fa:hover {
 .callbacks_tabs a:after {
 	content: "\f111";
 	font-size: 0;
-	font-family: FontAwesome;
+	font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 	visibility: visible;
 	display: block;
 	height: 8px;
@@ -1363,7 +1363,7 @@ a.m-movie-link{
   display: block;
 }
 .event-info span {
-    font-family: 'Open Sans', sans-serif;
+    font-family: Calibri, Century, Georgia, 黑体, sans-serif;
     font-size: 1em;
 	color:#000;
 }
@@ -1627,7 +1627,7 @@ p.info strong {
 	float: left;
 	outline: none;
 	width: 23%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 .rtm {
   width: 30%;
@@ -1713,7 +1713,7 @@ div#how-to a {
   font-size: 1em;
   font-weight: 600;
   margin-right: 16px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 .response-text-right ul li a {
   color: #887f66;
@@ -1763,7 +1763,7 @@ a.more-show-time:hover {
 .events-section h3 {
 	margin-bottom: 0.6em;
 	font-size: 2.2em;
-	font-family: 'Oxygen', sans-serif;
+	font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 	color: #000;
 	font-weight: 600;
 }
@@ -1854,7 +1854,7 @@ a.more:hover {
 .callbacks_tabs a:after {
 	content: "\f111";
 	font-size: 0;
-	font-family: FontAwesome;
+	font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 	visibility: visible;
 	display: block;
 	height: 14px;
@@ -1971,7 +1971,7 @@ ul.callbacks_tabs.callbacks2_tabs {
 	font-size: 0.9em;
 	border: none;
 	width: 93%;
-	    font-family: 'Open Sans', sans-serif;
+	    font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 .event-search {
 	position: relative;
@@ -2067,7 +2067,7 @@ ul.t-c {
 ul.t-c li {
 	  margin: 7px;
   font-size: 0.95em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Calibri, Century, Georgia, 黑体, sans-serif;
   line-height: 1.7em;
   color:#000;
 }
@@ -2075,7 +2075,7 @@ ul.place {
   padding: 0;
   margin: 6px 0;
   width: 100%;
-     font-family: 'Oxygen', sans-serif;
+     font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 ul.place li {
   font-size: 1.2em;
@@ -2106,7 +2106,7 @@ p.ans {
 }
 .breadcrumb > .active {
   color: #C7C7C7;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 /*--blog--*/
 .grid_3{
@@ -2218,7 +2218,7 @@ p.m_11 {
 h3.post {
 	font-size: 2.2em;
   margin-top: 0.5em;
-  font-family: 'Oxygen', sans-serif;
+  font-family: Calibri, Century, Georgia, 黑体, sans-serif;
   color: #000;
   font-weight: 600;
 }
@@ -2290,7 +2290,7 @@ ul.share li {
 	text-transform:uppercase;
 	font-weight:600;
 	letter-spacing:1px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 .client {
 	float:left;
@@ -2324,7 +2324,7 @@ ul.share li {
 	font-weight:400;
 	line-height:1.7em;
 	margin-top:0.8em;
-	    font-family: 'Open Sans', sans-serif;
+	    font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 .client-message p a {
 	color:#333333;
@@ -2348,7 +2348,7 @@ ul.share li {
 	resize: none;
 	margin: 2em 0;
 	font-style: italic;
-	font-family: 'Playfair Display', serif;
+	font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 	font-size: 1em;
 	background: url(../../images/c3.jpg) no-repeat 0px 14px;
 }
@@ -2543,7 +2543,7 @@ ul.tabs-menu li a:hover{
 	color: #007DD3;
 	margin: 0 0 .5em 0;
 	font-weight: 600;
-	font-family: 'Open Sans', sans-serif;
+	font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 .news-left ol{
   padding: 0;
@@ -2554,14 +2554,14 @@ ul.tabs-menu li a:hover{
   color: #000;
   margin: 0 0 .5em 1em;
   line-height: 1.8em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 .news-right ol li a{
 	  font-size: 0.98em;
   color: #000;
   margin: 0 0 .5em 1em;
   line-height: 1.8em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 h3.p-c-text {
 	margin-top: 1em;
@@ -2640,7 +2640,7 @@ i.fa.fa-mobile {
   padding: 10px 10px;
   outline: none;
   border: none;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 .tb-one input[type=submit] {
   color: #414141;
@@ -2651,7 +2651,7 @@ i.fa.fa-mobile {
   border: 2px solid #282828;
   background: #fff;
   float: right;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 .tb-one input[type=submit]:hover {
 	color:#fff;
@@ -2669,7 +2669,7 @@ i.fa.fa-mobile {
   padding: 15px;
   outline: none;
   border: none;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 /*-- contact --*/
 .contact {
@@ -2760,7 +2760,7 @@ p.para1{
     -o-transition: 0.5s all;
     -ms-transition: 0.5s all;
     letter-spacing: 1px;
-	    font-family: 'Open Sans', sans-serif;
+	    font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 .send input[type="submit"]:hover {
 	    background-color: #fff200;
@@ -2979,7 +2979,7 @@ a.c-c-c {
   outline: none;
   margin: 0px 0px 0 0;
   webkit-appearance: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 .support1 input[type="submit"]:hover {
     color: #000;
@@ -2998,7 +2998,7 @@ a.c-c-c {
   webkit-appearance: none;
   outline: none;
   width: 20%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 /*-- book-a-smile --*/
 .book-a-smile {
@@ -3073,7 +3073,7 @@ ul.v-menu {
   margin: 20px 0;
   color: #000;
   padding: 7px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Calibri, Century, Georgia, 黑体, sans-serif;
   font-size: 0.95em;
 }
 .vocher-form textarea {
@@ -3083,7 +3083,7 @@ ul.v-menu {
 	color: #000;
 	padding: 5px;
 	height: 100px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Calibri, Century, Georgia, 黑体, sans-serif;
   font-size: 0.95em;
 }
 select.list_of_vochers {
@@ -3091,7 +3091,7 @@ select.list_of_vochers {
 	display: block;
 	margin: 20px 0;
 	padding: 6px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 .vocher-form input[type="submit"] {
 	font-size: 1.1em;
@@ -3100,7 +3100,7 @@ select.list_of_vochers {
 	border: none;
 	background-color: #003B64;
 	color: #fff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 .vocher-form input[type="submit"]:hover {
 	color: #000;
@@ -3229,7 +3229,7 @@ select.list_of_vochers {
 	color:#000;
 	padding:5px;
 	font-size:0.9em;
-	font-family: 'Open Sans', sans-serif;
+	font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 .write-us textarea {
 	width: 50%;
@@ -3239,7 +3239,7 @@ select.list_of_vochers {
 	padding: 5px;
 	height: 150px;
 	font-size:0.9em;
-	font-family: 'Open Sans', sans-serif;
+	font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 .write-us input[type="submit"] {
   font-size: 1.1em;
@@ -3249,7 +3249,7 @@ select.list_of_vochers {
   background-color: #003B64;
   color: #fff;
 	font-size:01em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 .write-us input[type="submit"]:hover {
 	    color: #000;
@@ -3279,7 +3279,7 @@ label.lang {
 	width:100%;
 	color:#D7D7D7;
 	margin:1em 0;
-	font-family: 'Open Sans', sans-serif;
+	font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 	font-size:0.9em;
 }
 .movie-ticket-book img {
@@ -3416,7 +3416,7 @@ a.t-n-s-more:hover {
 	  color: #000;
   font-weight: 600;
   font-size: 1.2em;
-    font-family: 'Oxygen', sans-serif;
+    font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 .feed-back-form input[type="text"] {
 	width: 50%;
@@ -3424,7 +3424,7 @@ a.t-n-s-more:hover {
     margin: 20px 0;
     color: #000;
     padding: 7px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Calibri, Century, Georgia, 黑体, sans-serif;
     font-size: 0.9em;
 }
 .feed-back-form textarea {
@@ -3434,7 +3434,7 @@ a.t-n-s-more:hover {
 	color: #000;
 	padding: 5px;
 	height: 150px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 .feed-back-form input[type="submit"] {
 	font-size: 1.1em;
@@ -3443,7 +3443,7 @@ a.t-n-s-more:hover {
 	border: none;
 	background-color: #003B64;
 	color: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 }
 .feed-back-form input[type="submit"]:hover {
 	color: #000;
@@ -3453,7 +3453,7 @@ a.t-n-s-more:hover {
   color: #000;
   font-size: 1em;
   font-weight: 500;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Calibri, Century, Georgia, 黑体, sans-serif;
   line-height: 1.8em;
   margin:1em 0;
 }
@@ -3538,7 +3538,7 @@ ul.booking-menu {
 	margin: 20px 0;
 	color: #BDBDBD;
 	padding: 7px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 	font-size: 0.9em;
 }
 .confirm-details h3 {
@@ -3567,7 +3567,7 @@ input.payment {
 	margin: 20px 0;
 	color: #000;
 	padding: 7px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 	font-size: 0.9em;
 }
 select.month,select.year {
@@ -3592,7 +3592,7 @@ input.go-to-pay {
   margin-top: 3em;
   float: right;
   margin-right: 8em;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 	text-transform:uppercase;
 }
 input.go-to-pay:hover {
@@ -3673,7 +3673,7 @@ img.pp-img {
 }
 label {
 	margin: 0;
-	font-family: 'Open Sans', sans-serif;
+	font-family: Calibri, Century, Georgia, 黑体, sans-serif;
 	font-weight: 400;
 }
 .movie-ticket-book h4 {

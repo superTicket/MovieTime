@@ -2,6 +2,7 @@ package com.movietime.service;
 
 import com.movietime.dao.UserDao;
 import com.movietime.entity.User;
+import com.movietime.util.MD5Utils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,13 +17,13 @@ public class UserServiceImpl implements UserService {
 
     public boolean checkPassword(String username, String password_input) {
         User user = userDao.findByUsername(username);
-        return user.getPassword().equals(password_input);
+        return user.getPassword().equals(MD5Utils.encode(username + password_input));
     }
 
     public void registerUser(String username, String password, String firstName, String lastName) {
         User user = new User();
         user.setEmail(username);
-        user.setPassword(password);
+        user.setPassword(MD5Utils.encode(username + password));
         user.setFirstName(firstName);
         user.setLastName(lastName);
         user.setIconPath("/images/user_icon/p1.png");

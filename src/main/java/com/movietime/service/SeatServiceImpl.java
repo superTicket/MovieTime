@@ -1,8 +1,9 @@
 package com.movietime.service;
 
 import com.movietime.dao.SeatDao;
+import com.movietime.dao.ShowDao;
 import com.movietime.entity.Seat;
-import com.sun.xml.internal.bind.v2.TODO;
+import com.movietime.entity.Show;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Isolation;
@@ -10,14 +11,17 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.LinkedList;
 import java.util.List;
-import java.util.concurrent.locks.ReentrantLock;
 
 @Service
 public class SeatServiceImpl implements SeatService {
     @Autowired
     SeatDao seatDao;
+    @Autowired
+    ShowDao showDAO;
 
     public String[] getSeatMap(long id) {
+        Show show = showDAO.findOne(id);
+        return show.getSeatMap().split("\\|");
         /*List<Seat> seatList = seatDao.findByShowId(id);
         int maxRow = Integer.MIN_VALUE;
         int maxCol = Integer.MIN_VALUE;

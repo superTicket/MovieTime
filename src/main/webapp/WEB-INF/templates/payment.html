@@ -40,7 +40,9 @@
 						<img th:if="${username} != null" th:src="@{${usericon_path}}" alt="icon"/>
 					</li>
 					<li><p>
-						<a th:href="@{/}" th:if="${username} != null" th:text="${username}"></a>
+						<a style="cursor:default;" th:href="@{/}" th:if="${username} != null" th:text="${username}"></a>
+						<a href="/logout"><img th:if="${username} != null" src="/images/others/logout.png"
+											   style="width:20px; margin-left: 3px; height:25px;"/></a>
 						<a th:href="@{/login}" th:if="${username} == null">Login</a>
 					</p></li>
 					<li th:if="${username} == null" class="last"><i class="edit"> </i></li>

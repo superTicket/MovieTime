@@ -24,9 +24,4 @@
         SELECT * FROM seat
         WHERE show_id = #{id} AND is_booked = true
     </select>
-
-    <!--<select id="findByShowId" resultType="Seat">-->
-        <!--SELECT * FROM seat-->
-        <!--WHERE show_id = #{showId1}-->
-    <!--</select>-->
 </mapper>

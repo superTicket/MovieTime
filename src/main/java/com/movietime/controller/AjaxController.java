@@ -7,9 +7,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpSession;
 
-/**
- * Created by yangzy on 2017/6/9.
- */
 @Controller
 public class AjaxController {
     @RequestMapping(value = "/logout", method = RequestMethod.GET)

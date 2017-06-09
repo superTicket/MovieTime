@@ -1,10 +1,6 @@
 package com.movietime.vo;
 
-/**
- * Created by yangzy on 2017/6/9.
- */
 public class ShowVO {
-    private static final long serialVersionUID = 1L;
     private long id;
     private String theaterName;
     private String time;

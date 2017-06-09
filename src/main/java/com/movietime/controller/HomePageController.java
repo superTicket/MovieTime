@@ -4,7 +4,11 @@ import com.movietime.entity.Movie;
 import com.movietime.entity.User;
 import com.movietime.service.MovieService;
 import com.movietime.service.TagService;
-import com.movietime.vo.*;
+import com.movietime.util.Converter;
+import com.movietime.vo.BannerVO;
+import com.movietime.vo.MovieVO;
+import com.movietime.vo.PanelVO;
+import com.movietime.vo.UserVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -59,8 +63,8 @@ public class HomePageController {
             // 将panel元数据注入模型
             String tag = tagList.get(i);
             panelList[i] = new PanelVO();
-            panelList[i].name = tag;
-            if (i == 0) panelList[i].active = true;
+            panelList[i].setName(tag);
+            if (i == 0) panelList[i].setActive(true);
             // 将与该panel相关的电影注入模型
             List<Movie> relevantMovieList = ms.findByTagName(tag);
             List<Movie> noPosterList = new LinkedList<Movie>(); // 排除没有poster的电影
@@ -69,7 +73,7 @@ public class HomePageController {
                     noPosterList.add(movie);
             }
             relevantMovieList.removeAll(noPosterList);
-            panelList[i].movieList = Converter.convert(relevantMovieList).toArray(new MovieVO[1]);
+            panelList[i].setMovieList(Converter.convert(relevantMovieList).toArray(new MovieVO[1]));
         }
         model.addAttribute("panelList", panelList);
         return "homepage";

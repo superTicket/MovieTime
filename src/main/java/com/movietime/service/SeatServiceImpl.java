@@ -16,10 +16,10 @@ public class SeatServiceImpl implements SeatService {
     @Autowired
     SeatDao seatDao;
     @Autowired
-    ShowDao showDAO;
+    ShowDao showDao;
 
     public String[] getSeatMap(long id) {
-        Show show = showDAO.findOne(id);
+        Show show = showDao.findOne(id);
         return show.getSeatMap().split("\\|");
     }
 
@@ -30,7 +30,6 @@ public class SeatServiceImpl implements SeatService {
             if (seat.isBooked())
                 soldSeatList_str.add(seat.getRow() + "_" + seat.getCol());
         }
-        String[] str = soldSeatList_str.toArray(new String[1]);
         return soldSeatList_str.toArray(new String[1]);
     }
 

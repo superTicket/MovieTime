@@ -1,7 +1,7 @@
 package com.movietime.controller;
 
-import com.movietime.service.UserService;
 import com.movietime.entity.User;
+import com.movietime.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,7 +18,7 @@ public class LoginPageController {
 
     @RequestMapping(method = RequestMethod.GET)
     public String get_login(Model model, HttpSession session) {
-        if (session.getAttribute("name") != null)
+        if (session.getAttribute("user") != null)
             return "redirect:/";
         else
             return "login";

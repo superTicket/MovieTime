@@ -9,6 +9,7 @@ import com.movietime.service.ShowService;
 import com.movietime.vo.Converter;
 import com.movietime.vo.ScheduleVO;
 import com.movietime.vo.ShowVO;
+import com.movietime.vo.UserVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -46,8 +47,9 @@ public class SelectShowPageController {
         // 登录状态
         User user = (User) session.getAttribute("user");
         if (user != null) {
-            model.addAttribute("username", user.getEmail());
-            model.addAttribute("usericon_path", user.getIconPath());
+            UserVO userVO = (UserVO) Converter.convert(user);
+            model.addAttribute("username", userVO.getUsername());
+            model.addAttribute("usericon_path", userVO.getIconPath());
         }
 
         // 将电影信息加入模型

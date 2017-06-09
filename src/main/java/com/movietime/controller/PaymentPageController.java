@@ -1,6 +1,8 @@
 package com.movietime.controller;
 
 import com.movietime.entity.User;
+import com.movietime.vo.Converter;
+import com.movietime.vo.UserVO;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,8 +20,9 @@ public class PaymentPageController {
         // 登录状态
         User user = (User) session.getAttribute("user");
         if (user != null) {
-            model.addAttribute("username", user.getEmail());
-            model.addAttribute("usericon_path", user.getIconPath());
+            UserVO userVO = (UserVO) Converter.convert(user);
+            model.addAttribute("username", userVO.getUsername());
+            model.addAttribute("usericon_path", userVO.getIconPath());
         }
 
         model.addAttribute("movie_name", "Baahubali");

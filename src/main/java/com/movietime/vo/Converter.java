@@ -2,6 +2,7 @@ package com.movietime.vo;
 
 import com.movietime.entity.Movie;
 import com.movietime.entity.Show;
+import com.movietime.entity.User;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -37,5 +38,12 @@ public class Converter {
         showVO.setTheaterName(show.getTheaterName());
         showVO.setTime(show.getTime());
         return showVO;
+    }
+
+    public static UserVO convert(User user) {
+        UserVO userVO = new UserVO();
+        userVO.setUsername(user.getFirstName() + " " + user.getLastName());
+        userVO.setIconPath(user.getIconPath());
+        return userVO;
     }
 }

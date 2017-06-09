@@ -7,6 +7,8 @@ import com.movietime.entity.User;
 import com.movietime.service.MovieService;
 import com.movietime.service.SeatService;
 import com.movietime.service.ShowService;
+import com.movietime.vo.Converter;
+import com.movietime.vo.UserVO;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -67,8 +69,9 @@ public class SelectSeatPageController {
         // 登录状态
         User user = (User) session.getAttribute("user");
         if (user != null) {
-            model.addAttribute("username", user.getEmail());
-            model.addAttribute("usericon_path", user.getIconPath());
+            UserVO userVO = (UserVO) Converter.convert(user);
+            model.addAttribute("username", userVO.getUsername());
+            model.addAttribute("usericon_path", userVO.getIconPath());
         }
 
         // 电影&场次信息

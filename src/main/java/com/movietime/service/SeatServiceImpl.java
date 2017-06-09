@@ -55,7 +55,7 @@ public class SeatServiceImpl implements SeatService {
         return soldSeatList_str.toArray(new String[1]);
     }
 
-    @Transactional(isolation = Isolation.SERIALIZABLE)
+    @Transactional
     public boolean book(List<Seat> seatList) {
         for (Seat seat : seatList) {
             if (seatDao.occupied(seat)) return false;

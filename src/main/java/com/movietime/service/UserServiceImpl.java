@@ -32,7 +32,7 @@ public class UserServiceImpl implements UserService {
 
     public User getUserInstance(String username, String password) {
         User user = userDao.findByUsername(username);
-        if (user.getPassword().equals(password))
+        if (user.getPassword().equals(MD5Utils.encode(username + password)))
             return user;
         return null;
     }

@@ -2076,4 +2076,8 @@ CREATE TABLE `user` (
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-SET FOREIGN_KEY_CHECKS=1;
+BEGIN;
+INSERT INTO `user` VALUES ('1', 'Alice@outlook.com', '/images/user_icon/p1.png', 'Alice', 'Wang', 'test');
+COMMIT;
+
+SET FOREIGN_KEY_CHECKS = 1;

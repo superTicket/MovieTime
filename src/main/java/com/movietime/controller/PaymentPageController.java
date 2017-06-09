@@ -19,11 +19,12 @@ public class PaymentPageController {
     public String get_payment(Model model, HttpSession session) {
         // 登录状态
         User user = (User) session.getAttribute("user");
-        if (user != null) {
-            UserVO userVO = (UserVO) Converter.convert(user);
-            model.addAttribute("username", userVO.getUsername());
-            model.addAttribute("usericon_path", userVO.getIconPath());
-        }
+        if (user == null)
+            return "redirect:/";
+
+        UserVO userVO = (UserVO) Converter.convert(user);
+        model.addAttribute("username", userVO.getUsername());
+        model.addAttribute("usericon_path", userVO.getIconPath());
 
         model.addAttribute("movie_name", "Baahubali");
         model.addAttribute("theater_name", "Lorem Ipsum");
@@ -40,12 +41,12 @@ public class PaymentPageController {
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
     public String post_payment(String email, String phone, String card_number,
-                                     String cvv, String card_holder_name, String valid_thru, Model model) {
+                               String cvv, String card_holder_name, String valid_thru, Model model) {
         System.out.println("\nemail:" + email + "\nphone:" + phone + "\ncard_number:" +
                 card_number + "\ncvv:" + cvv + "\ncard_holder_name:" + card_holder_name +
                 "\nvalid_thru:" + valid_thru);
 
         int randNum = new Random().nextInt(3);
-        return randNum % 2 == 0 ? "succeed" : "fail";
+        return randNum % 3 <= 1 ? "succeed" : "fail";
     }
 }

@@ -1,19 +1,14 @@
 package com.movietime.controller;
 
-<<<<<<< HEAD
-import com.movietime.service.MovieService;
-import com.movietime.service.TagService;
-import com.movietime.vo.BannerVO;
-import com.movietime.util.Converter;
-import com.movietime.vo.MovieVO;
-import com.movietime.vo.PanelVO;
-=======
->>>>>>> 8ab1f9940083551ed7d52283cf10769cc5c73561
 import com.movietime.entity.Movie;
 import com.movietime.entity.User;
 import com.movietime.service.MovieService;
 import com.movietime.service.TagService;
-import com.movietime.vo.*;
+import com.movietime.util.Converter;
+import com.movietime.vo.BannerVO;
+import com.movietime.vo.MovieVO;
+import com.movietime.vo.PanelVO;
+import com.movietime.vo.UserVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

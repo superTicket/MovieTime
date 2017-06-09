@@ -1,7 +1,7 @@
 package com.movietime.controller;
 
 import com.movietime.entity.User;
-import com.movietime.vo.Converter;
+import com.movietime.util.Converter;
 import com.movietime.vo.UserVO;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

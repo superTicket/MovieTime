@@ -7,7 +7,7 @@ import com.movietime.entity.User;
 import com.movietime.service.MovieService;
 import com.movietime.service.SeatService;
 import com.movietime.service.ShowService;
-import com.movietime.vo.Converter;
+import com.movietime.util.Converter;
 import com.movietime.vo.UserVO;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;

@@ -2,12 +2,10 @@ package com.movietime.util;
 
 import com.movietime.entity.Movie;
 import com.movietime.entity.Show;
-<<<<<<< HEAD:src/main/java/com/movietime/util/Converter.java
+import com.movietime.entity.User;
 import com.movietime.vo.MovieVO;
 import com.movietime.vo.ShowVO;
-=======
-import com.movietime.entity.User;
->>>>>>> 8ab1f9940083551ed7d52283cf10769cc5c73561:src/main/java/com/movietime/vo/Converter.java
+import com.movietime.vo.UserVO;
 
 import java.util.LinkedList;
 import java.util.List;

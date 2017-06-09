@@ -1,13 +1,19 @@
 package com.movietime.controller;
 
+<<<<<<< HEAD
 import com.movietime.service.MovieService;
 import com.movietime.service.TagService;
 import com.movietime.vo.BannerVO;
 import com.movietime.util.Converter;
 import com.movietime.vo.MovieVO;
 import com.movietime.vo.PanelVO;
+=======
+>>>>>>> 8ab1f9940083551ed7d52283cf10769cc5c73561
 import com.movietime.entity.Movie;
 import com.movietime.entity.User;
+import com.movietime.service.MovieService;
+import com.movietime.service.TagService;
+import com.movietime.vo.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -31,8 +37,9 @@ public class HomePageController {
         // 登录状态
         User user = (User) session.getAttribute("user");
         if (user != null) {
-            model.addAttribute("username", user.getEmail());
-            model.addAttribute("usericon_path", user.getIconPath());
+            UserVO userVO = (UserVO) Converter.convert(user);
+            model.addAttribute("username", userVO.getUsername());
+            model.addAttribute("usericon_path", userVO.getIconPath());
         }
 
         List<Movie> movieList = ms.findAll();

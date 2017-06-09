@@ -30,7 +30,7 @@
 						<a th:href="@{/}" th:if="${username} != null" th:text="${username}"></a>
 						<a th:href="@{/login}" th:if="${username} == null">Login</a>
 					</p></li>
-					<li class="last"><i class="edit"> </i></li>
+					<li th:if="${username} == null" class="last"><i class="edit"> </i></li>
 					<div class="clearfix"> </div>
 				</ul>
 			</div>

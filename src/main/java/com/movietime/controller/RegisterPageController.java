@@ -1,5 +1,6 @@
 package com.movietime.controller;
 
+import com.movietime.entity.User;
 import com.movietime.service.UserService;
 import com.movietime.util.Validator;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,7 +32,8 @@ public class RegisterPageController {
                 password.equals(confirmPassword) &&
                 !us.isRegistered(email)) {
             us.registerUser(email, password, firstName, lastName);
-            session.setAttribute("user", us.getUserInstance(email, password));
+            User user = us.getUserInstance(email, password);
+            session.setAttribute("user", user);
             return "redirect:/";
         }
         return "redirect:/register";

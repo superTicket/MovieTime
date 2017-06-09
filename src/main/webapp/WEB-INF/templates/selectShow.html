@@ -45,7 +45,7 @@
 				<div class="col-md-4 movies-by-category movie-booking">
 					<div class="movie-ticket-book">
 						<div class="clearfix"></div>
-						<img th:src="@{${movie.poster_path}}" alt="poster" />
+						<img th:src="@{${movie.posterPath}}" alt="poster" />
 						<div class="bahubali-details">
 							<h4>Release Date:</h4>
 							<p th:text="${movie.release_date}"></p>
@@ -69,7 +69,9 @@
 								<span th:text="${theater.name} + ' : ' + ${theater.location}"></span>
 							</li>
 							<li class="time" th:each="show : ${theater.showList}">
-								<a th:name="${theater.name}" onclick="clickShow(this)" th:text="${show}"></a>
+								<a th:name="${theater.name}"
+								   th:href="'/selectSeat/cinema/' + ${theater.id} + '?movie_id=' + ${movie.id} + '&show_id=' + ${show.id}"
+								   th:text="${show.time}"></a>
 							</li>
 						</ul>
 					</div>

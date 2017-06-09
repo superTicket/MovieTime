@@ -28,9 +28,10 @@ function findAndDelete(selectedList, seat) {
 function proceed() {
     if (selectedList.length > 0) {
         $.ajax({
-            url: '/try_book_ticket',
+            url: window.location.href,
             method: 'POST',
             data: {
+                show_id: show_id,
                 selectedList_JSON: JSON.stringify(selectedList)
             },
             success: function (data) {

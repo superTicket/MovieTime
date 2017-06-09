@@ -1,7 +1,7 @@
 function proceed() {
     $.ajax({
         type: 'POST',
-        url: "/try_payment",
+        url: "/payment",
         data: {
             email:$("input[name=email]").val(),
             phone:$("input[name=phone]").val(),

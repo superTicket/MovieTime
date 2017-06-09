@@ -76,36 +76,34 @@
 			<!--feature movies-->
 			<div class="general">
 				<h4 class="latest-text w3_latest_text">Featured Movies</h4>
-				<div class="container row">
-					<div class="col-md-12">
-						<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
-							<ul id="myTab" class="featureMoviesNav featureMoviesNav-tabs" role="tablist" style="padding-left:0px; padding-bottom:10px">
-								<li role="presentation" th:each="panel : ${panelList}" th:classappend="(${panel.active} ? active)" class="tab"><a th:href="'#'+${panel.id}" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true" style="color:white" th:text="${panel.name}"></a></li>
-							</ul>
-							<div id="myTabContent" class="tab-content">
-								<div th:each="panel:${panelList}" role="tabpanel" class="tab-pane fade in" th:classappend="(${panel.active} ? active)" th:id="${panel.id}" aria-labelledby="home-tab">
-									<div class="w3_agile_featured_movies">
-										<div class="col-md-2 w3l-movie-gride-agile" th:each="movieItem : ${panel.movieList}">
-											<a th:name="${movieItem.name}"
-											   th:href="'/selectShow?movie_id=' + ${movieItem.id}"
-											   class="hvr-shutter-out-horizontal">
-												<img th:src="@{${movieItem.posterPath}}" title="album-name" class="img-responsive" alt=" " />
-												<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
-											</a>
-											<div class="mid-1 agileits_w3layouts_mid_1_home">
-												<div class="w3l-movie-text">
-													<h6><a th:name="${movieItem.name}"
-														   th:href="'/selectShow?movie_id=' + ${movieItem.id}"
-														   th:text="${movieItem.name}"></a></h6>
-												</div>
-												<div class="mid-2 agile_mid_2_home">
-
-													<div class="clearfix"></div>
-												</div>
-											</div>
-											<div class="clearfix"> </div>
-										</div>
+				<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+					<ul id="myTab" class="featureMoviesNav featureMoviesNav-tabs" role="tablist"
+						style="padding-left:0px; padding-bottom:10px">
+						<li role="presentation" th:each="panel : ${panelList}"
+							th:classappend="(${panel.active} ? active)" class="tab"><a th:href="'#'+${panel.id}"
+																					   id="home-tab" role="tab"
+																					   data-toggle="tab"
+																					   aria-controls="home"
+																					   aria-expanded="true"
+																					   style="color:white"
+																					   th:text="${panel.name}"></a></li>
+					</ul>
+					<div id="myTabContent" class="tab-content">
+						<div th:each="panel:${panelList}" role="tabpanel" class="tab-pane fade in"
+							 th:classappend="(${panel.active} ? active)" th:id="${panel.id}" aria-labelledby="home-tab">
+							<div class="w3l-movie-gride-agile" th:each="movieItem : ${panel.movieList}">
+								<a th:name="${movieItem.name}"
+								   th:href="'/selectShow?movie_id=' + ${movieItem.id}"
+								   class="hvr-shutter-out-horizontal">
+									<img th:src="@{${movieItem.posterPath}}" title="album-name" class="img-responsive"
+										 alt=" "/>
+									<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i>
 									</div>
+								</a>
+								<div class="w3l-movie-text">
+									<h6><a th:name="${movieItem.name}"
+										   th:href="'/selectShow?movie_id=' + ${movieItem.id}"
+										   th:text="${movieItem.name}"></a></h6>
 								</div>
 							</div>
 						</div>

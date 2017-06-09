@@ -10,7 +10,6 @@ public class Show implements Serializable {
     private int price;
     private long movieId;
     private String seatMap;
-    private String soldSeat;
 
     public long getId() {
         return id;
@@ -58,13 +57,5 @@ public class Show implements Serializable {
 
     public void setSeatMap(String seatMap) {
         this.seatMap = seatMap;
-    }
-
-    public String getSoldSeat() {
-        return soldSeat;
-    }
-
-    public void setSoldSeat(String soldSeat) {
-        this.soldSeat = soldSeat;
     }
 }

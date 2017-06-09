@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50716
 File Encoding         : 65001
 
-Date: 2017-06-09 09:38:45
+Date: 2017-06-09 10:28:52
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -1042,17 +1042,17 @@ CREATE TABLE `show` (
 -- ----------------------------
 INSERT INTO `show` VALUES ('1', 'ABC', '10:30', '130', '1', 'aaaaaaaa|aaaaaaaa|________|aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|aaaaaaaa|');
 INSERT INTO `show` VALUES ('2', 'ABC', '14:30', '100', '1', 'aaaaaaaa|aaaaaaaa|________|aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|aaaaaaaa|');
-INSERT INTO `show` VALUES ('3', 'UKnow', '10:00', '20', '1', '\r\naaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|');
-INSERT INTO `show` VALUES ('4', 'UKnow', '14:00', '15', '2', '\r\naaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|');
-INSERT INTO `show` VALUES ('5', 'UKnow', '20:00', '30', '3', '\r\naaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|');
-INSERT INTO `show` VALUES ('6', 'UKnow', '22:00', '20', '4', '\r\naaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|');
+INSERT INTO `show` VALUES ('3', 'UKnow', '10:00', '20', '1', 'aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|');
+INSERT INTO `show` VALUES ('4', 'UKnow', '14:00', '15', '2', 'aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|');
+INSERT INTO `show` VALUES ('5', 'UKnow', '20:00', '30', '3', 'aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|');
+INSERT INTO `show` VALUES ('6', 'UKnow', '22:00', '20', '4', 'aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|aaaaaaaa|');
 INSERT INTO `show` VALUES ('7', 'EyeBrand', '10:20', '70', '2', 'aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|');
 INSERT INTO `show` VALUES ('8', 'EyeBrand', '15:00', '70', '5', 'aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|');
 INSERT INTO `show` VALUES ('9', 'EyeBrand', '20:00', '70', '6', 'aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|aaa__aaa|');
-INSERT INTO `show` VALUES ('10', 'BigFeel', '08:00', '35', '4', '\r\n\r\naa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|');
-INSERT INTO `show` VALUES ('11', 'BigFeel', '10:00', '42', '6', '\r\n\r\naa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|');
-INSERT INTO `show` VALUES ('12', 'BigFeel', '14:00', '30', '8', '\r\n\r\naa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|');
-INSERT INTO `show` VALUES ('13', 'BigFeel', '16:00', '20', '10', '\r\n\r\naa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|');
+INSERT INTO `show` VALUES ('10', 'BigFeel', '08:00', '35', '4', 'aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|');
+INSERT INTO `show` VALUES ('11', 'BigFeel', '10:00', '42', '6', 'aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|');
+INSERT INTO `show` VALUES ('12', 'BigFeel', '14:00', '30', '8', 'aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|');
+INSERT INTO `show` VALUES ('13', 'BigFeel', '16:00', '20', '10', 'aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|aa_aa_aa|');
 INSERT INTO `show` VALUES ('14', 'Happy', '09:30', '50', '9', 'aaaaaaaa|_aaaaaa_|_aaaaaa_|_aaaaaa_|_aaaaaa_|aaaaaaaa|_aaaaaa_|aaaaaaaa|');
 INSERT INTO `show` VALUES ('15', 'Happy', '19:30', '50', '7', 'aaaaaaaa|_aaaaaa_|_aaaaaa_|_aaaaaa_|_aaaaaa_|aaaaaaaa|_aaaaaa_|aaaaaaaa|');
 

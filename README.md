@@ -11,9 +11,9 @@
   1. [下载Intellij](http://www.jetbrains.com/idea/download/)，安装
   2. 如下图一所示，在欢迎界面选择Checkout from Version Control，按向导提示登录Github账号，按下图二填好git URL，记录这里所设置的**项目路径**。如下图二的项目路径为/Users/yangzy/IdeaProjects/MovieTime/
 
-![img](readmeResources/welcome.png)
+  ![img](readmeResources/welcome.png)
 
-![img](readmeResources/clone.png)
+  ![img](readmeResources/clone.png)
 
 ​		完成后点击Clone按钮。
 
@@ -34,7 +34,7 @@
 
   1. 下载MySQL数据库服务器，并安装。安装向导会提供数据库初始密码，请记录之。
 
-    ![img](initreadmeResources/initialPassword.png)
+    ![img](readmeResources/initialPassword.png)
 
     然后将MySQL安装目录的bin目录添加到PATH环境变量。
 
@@ -63,9 +63,9 @@
 
 * #### 运行服务端
 
- ​打开Intellij，点击下图所示的按钮即可
+  打开Intellij，点击下图所示的按钮即可
 
-![img](readmeResources/run.png)
+  ![img](readmeResources/run.png)
 
 ​	服务器的启动可能需要15~60秒。
 

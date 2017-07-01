@@ -7,9 +7,6 @@
     <update id="update">
         UPDATE seat
         <set>
-            <!--<if test="showId != null">show_id = #{showId},</if>-->
-            <!--<if test="row != null">row = #{row},</if>-->
-            <!--<if test="col != null">col = #{col},</if>-->
             <if test="isBooked != null">is_booked = #{isBooked}</if>
         </set>
         WHERE show_id = #{showId} AND row = #{row} AND col = #{col}

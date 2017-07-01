@@ -1,10 +1,22 @@
 # Movie Time
 
-*Movie Time* 是一个基于SpringMVC的在线电影售票系统。
+Movie Time 电影售票系统 项目最终制品
+
+## 展示截图
+
+### 首页
+<img src="readmeResources/index1.png" width="80%" />
+
+<img src="readmeResources/index2.png" width="80%" />
+
+### 选场次
+<img src="readmeResources/show.png" width="80%" />
+
+### 选座
+<img src="readmeResources/select.png" width="80%" />
 
 
-
-# 部署说明
+## 安装部署说明
 
 * #### 下载代码库
 

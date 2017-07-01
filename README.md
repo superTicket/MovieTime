@@ -58,7 +58,7 @@ Movie Time 电影售票系统 项目最终制品
 
 * #### 安装JDK
 
- ​[下载JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)并安装，然后将JDK安装目录的Bin目录加入到PATH变量。
+ ​ [下载JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)并安装，然后将JDK安装目录的Bin目录加入到PATH变量。
 
 
 * #### 导入项目

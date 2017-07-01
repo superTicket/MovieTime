@@ -1,4 +1,4 @@
-# Movie Time
+# MovieTime
 
 Movie Time 电影售票系统 项目最终制品
 
@@ -18,33 +18,16 @@ Movie Time 电影售票系统 项目最终制品
 
 ## 安装部署说明
 
-* #### 下载代码库
+* #### 数据库设置
 
-  1. [下载Intellij](http://www.jetbrains.com/idea/download/)，安装
-  2. 如下图一所示，在欢迎界面选择Checkout from Version Control，按向导提示登录Github账号，按下图二填好git URL，记录这里所设置的**项目路径**。如下图二的项目路径为/Users/yangzy/IdeaProjects/MovieTime/
-
-  ![img](readmeResources/welcome.png)
-
-  ![img](readmeResources/clone.png)
-
-​		完成后点击Clone按钮。
-
-​
-
-* #### 安装JDK
-
- ​[下载JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)并安装，然后将JDK安装目录的Bin目录加入到PATH变量。
-
-
-* #### 安装MySQL数据库
-
+  本项目数据库设置如下：
   > 数据库名：movietime
-  >
   > 用户名：root
-  >
   > 密码：123456​
 
-  1. 下载MySQL数据库服务器，并安装。安装向导会提供数据库初始密码，请记录之。
+
+  具体设置步骤如下：
+  1. 下载安装MySQL数据库服务器。安装向导会提供数据库初始密码，需要记录下来。
 
     ![img](readmeResources/initialPassword.png)
 
@@ -73,16 +56,22 @@ Movie Time 电影售票系统 项目最终制品
     如此就完成了数据库的配置.
 
 
-* #### 运行服务端
+* #### 安装JDK
 
-  打开Intellij，点击下图所示的按钮即可
+ ​[下载JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)并安装，然后将JDK安装目录的Bin目录加入到PATH变量。
 
-  ![img](readmeResources/run.png)
 
-​	服务器的启动可能需要15~60秒。
+* #### 导入项目
 
- 
+  将项目导入Eclipse或Intellij IDEA，需要选择导入Maven项目，通过`pom.xml`导入。
+
+
+* #### 启动服务端
+
+  使用`jetty:run`命令启动项目。
+  服务端的启动可能需要15~30秒。
+
 
 * #### 访问网站
 
- ​用浏览器访问http://localhost:8080/
+ ​ 使用浏览器访问项目首页：http://localhost:8080/
